@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>WearPakau</title>
+    <title>Create User</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles/style.css" />
@@ -77,10 +77,19 @@
     <!-- ************form -->
     <div class="outerformcontainer">
       <div class="formcontainer">
-        <h2 class="formheading">Log in to your account</h2>
+        <h2 class="formheading">Join us </h2>
         <form action="" class="loginform">
           <div class="inputcontainer">
-            <label for="email" class="emaillabel">Your email</label>
+            <label for="name" class="emaillabel">Your name</label>
+            <input
+              type="name"
+              name="name"
+              autocomplete="off"
+              maxlength="30"
+            />
+          </div>
+          <div class="inputcontainer">
+            <label for="email" class="emaillabel">Your Phone number or email</label>
             <input
               type="email"
               name="email"
@@ -90,6 +99,10 @@
           </div>
           <div class="inputcontainer">
             <label for="password" class="passwordlabel">Password</label>
+            <input type="password" name="password" />
+          </div>
+          <div class="inputcontainer">
+            <label for="password" class="passwordlabel">Confirm Password</label>
             <input type="password" name="password" />
           </div>
           <input type="submit" class="submitbutton" value="Log in" />
