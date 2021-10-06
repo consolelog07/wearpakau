@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+$montserrat: "Montserrat", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  // background: #;
+  padding: 10px 50px;
+  border-bottom: 1px solid #a878d8;
+  box-shadow: 1px 1px gray;
+}
+.logo {
+  width: 8%;
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+.navlinks {
+  // border-radius: 0 150px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100vh;
+  // height: 100vh;
+  width: 30%;
+  list-style-type: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  // top:0;
+  background: #a878d8;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+  z-index: 9999;
+  // position: relative;
+}
+.nimishdisappear {
+  display: block;
+  overflow: hidden;
+}
+
+.navlink a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-family: $montserrat;
+  font-weight: 500;
+}
+
+.burger {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    cursor: pointer;
+    width: 100%;
+  }
+}
+
+.closebutton {
+  position: absolute;
+  top: 5%;
+  right: -20%;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  transition: 0.5s ease-in;
+  pointer-events: none;
+  img {
+    cursor: pointer;
+    width: 100%;
+  }
+  transform: rotate(180deg);
+}
+.showclosebutton {
+  opacity: 1;
+  pointer-events: auto;
+  transform: rotate(0deg);
+}
+.navactive {
+  transform: translateX(0%);
+}
+.searchcontainer {
+  width: 300px;
+  height: 95%;
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid #9060a8;
+  button {
+    width: 15%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    text-align: center;
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 40%;
+    }
+  }
+  input {
+    font-family: $montserrat;
+    padding-left: 2px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    float: right;
+    height: 100%;
+    width: 85%;
+    background: transparent;
+    // background: red;
+    color: black;
+    border-radius: 5px;
+  }
+}
+// ::placeholder {
+//   color: white;
+// }
+.cartcontainer,
+.profilecontainer {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    cursor: pointer;
+    width: 100%;
+  }
+}
+.cartcontainer img {
+  width: 80%;
+}
+// ******************placeholdercontainer
+
+.placeholdercontainer {
+  height: 80vh;
+}
+
+// **************form
+
+.outerformcontainer {
+  height: 82vh;
+  width: 100%;
+  position: relative;
+  .formcontainer {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 60%;
+    border: 1px solid #a878d8;
+    border-radius: 15px;
+    padding: 10px;
+    .formheading {
+      font-family: $montserrat;
+      font-size: 24px;
+      margin: 15px 0;
+    }
+    .loginform {
+      margin-top: 10px;
+      display: block;
+      text-align: center;
+      .inputcontainer {
+        width: 50%;
+        margin: 10px auto;
+        // height: 35px;
+        border-radius: 8px;
+        text-align: start;
+        label {
+          text-align: start;
+          font-family: $montserrat;
+          font-weight: 600;
+          font-size: 13px;
+          display: block;
+          margin-bottom: 5px;
+          margin-left: 3px;
+        }
+        input {
+          font-family: $montserrat;
+          font-weight: 500;
+          width: 100%;
+          padding: 3px 7px;
+          height: 35px;
+          border: 1px solid #a878d8;
+          transition: 0.2s ease;
+          border-radius: 10px;
+          &:focus {
+            outline: none;
+            border: 1px solid #a878d8;
+            box-shadow: 5px 5px 1px #9060a8;
+          }
+        }
+      }
+
+      .submitbutton {
+        display: block;
+        height: 35px;
+        width: 50%;
+        margin: 15px auto;
+        border-radius: 10px;
+        background-color: #a878d8;
+        outline: none;
+        color: #f0d8f0;
+        border: none;
+        font-family: $montserrat;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .forgotpass {
+        margin: 5px 0;
+        display: block;
+        font-family: $montserrat;
+        font-size: 13px;
+        font-weight: 500;
+        a {
+          text-decoration: none;
+          color: #a878d8;
+        }
+      }
+      .formwarning {
+        color: rgb(248, 95, 95);
+        font-family: $montserrat;
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .alreadyhaveacc {
+        margin-top: 30px;
+        font-family: $montserrat;
+        font-size: 13px;
+        font-weight: 400;
+        display: block;
+        p a {
+          color: #a878d8;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+// *******************footer
+
+footer {
+  width: 100%;
+  background-color: #a878d8;
+  padding: 50px 200px;
+  .footerhead {
+    // background: white;
+    .footerlogocontainer {
+      width: 200px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .footerlinkscontainer {
+    width: 100%;
+    // background: red;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .footercoltitle {
+    font-size: 16px;
+    color: #f0d8f0;
+    font-family: $montserrat;
+    font-weight: 500;
+  }
+  .footercollinklist {
+    list-style-type: none;
+    li {
+      margin-top: 5px;
+      a {
+        font-size: 14px;
+        color: #f0d8f0;
+        text-decoration: none;
+        font-family: $montserrat;
+        font-weight: 300;
+      }
+    }
+  }
+  .footercol3 {
+    text-align: center;
+    .footersocialicons {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      margin-top: 10px;
+      li a img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}
+
+// **************** media queries for tabs n ipads
+
+@media only screen and (max-width: 768px) {
+  .placeholdercontainer {
+    background: white;
+  }
+
+  .outerformcontainer {
+    .formcontainer {
+      width: 50%;
+      .formheading {
+        margin: 10px 0;
+      }
+      .loginform {
+        margin-top: 20px;
+        .inputcontainer {
+          width: 70%;
+          label {
+            margin-bottom: 3px;
+          }
+        }
+        .submitbutton {
+          width: 70%;
+        }
+        .alreadyhaveacc {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  footer {
+    padding: 20px 40px;
+    .footerhead .footerlogocontainer {
+      width: 150px;
+    }
+  }
+}
+
+// ************** media queries for mobile devices
+
+@media only screen and (max-width: 480px) {
+  .placeholdercontainer {
+    background: white;
+  }
+
+  .cartcontainer {
+    display: none;
+  }
+  nav {
+    padding: 10px 20px;
+    .searchcontainer {
+      width: 150px;
+      input {
+        font-size: 14px;
+      }
+    }
+    .searchcontainer {
+      button {
+        img {
+          width: 60%;
+        }
+      }
+    }
+
+    .logo {
+      margin-right: 10px;
+      width: 20%;
+      img {
+        margin-top: 5px;
+      }
+    }
+  }
+  .navlinks {
+    width: 80%;
+  }
+
+  .closebutton {
+    right: -50px;
+  }
+
+  .outerformcontainer {
+    .formcontainer {
+      width: 80%;
+      .formheading {
+        margin: 8px 0;
+        font-size: 22px;
+      }
+      .loginform {
+        margin-top: 20px;
+        .inputcontainer {
+          width: 80%;
+        }
+        .submitbutton {
+          width: 80%;
+        }
+        .alreadyhaveacc {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+
+  footer {
+    padding: 10px 20px;
+    .footerhead .footerlogocontainer {
+      width: 150px;
+    }
+    .footerlinkscontainer {
+      flex-direction: column;
+      div {
+        margin-bottom: 20px;
+      }
+    }
+    .footercoltitle {
+      font-size: 13px;
+    }
+    .footercollinklist li {
+      margin-top: 1px;
+      a {
+        font-size: 11px;
+      }
+    }
+
+    .footercol3 .footersocialicons li a img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
