@@ -4,11 +4,11 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Reset pass</title>
+    <title>WearPakau</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/forms.css" />
+    <link rel="stylesheet" href="styles/productdetail.css" />
     <link rel="stylesheet" href="styles/footer.css" />
   </head>
   <style>
@@ -75,30 +75,51 @@
 
     <!-- *****placeholder container -->
     <!-- <div class="placeholdercontainer"></div> -->
+    <!-- **************PRODUCT DETAIL  -->
 
-    <!-- ************form -->
-    <div class="outerformcontainer">
-      <div class="formcontainer">
-        <h2 class="formheading">Reset Password</h2>
-        <form action="" class="loginform">
-          <div class="inputcontainer">
-            <label for="password" class="passwordlabel">Password</label>
-            <input type="password" name="password" />
+    <div class="productdetailcontainer">
+      <div class="productcarousel">
+        <img src="styles/images/tshirtimage.jpg" alt="" />
+      </div>
+      <div class="productinfo">
+        <h1>Premium Cotton T-Shirt Vest</h1>
+        <p>T-Shirt</p>
+        <div class="sizes">
+          <span>XS</span>
+          <span>S</span>
+          <span>M</span>
+          <span>L</span>
+        </div>
+        <div class="pricing">
+          <span class="price">RS. 4900</span>
+          <span class="og-price">RS. 10000</span>
+          <span class="discount">(50% OFF)</span>
+        </div>
+        <!-- <div class="extrainfo">
+          <span>100% Original Products</span>
+        </div> -->
+        <span class="qunatitycustombox">
+
+          <div class="quantityselector">
+            <span>Quantity </span>
+            <select>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="3">4</option>
+              <option value="3">5</option>
+            </select>
           </div>
-          <div class="inputcontainer">
-            <label for="password" class="passwordlabel">Confirm password</label>
-            <input type="password" name="password" />
-          </div>
-          <input type="submit" class="submitbutton" value="Reset My Password" />
-          <!-- <span class="forgotpass"><a href="#">Forgot password?</a></span> -->
-          <span class="formwarning">Choose another password</span>
-          <!-- <span class="alreadyhaveacc"><p>Already have an account? <a href="">Sign in</a></p></span> -->
-        </form>
+          <button class="customiseproduct">Cusomise Product</button>
+        </span>
+        <span class="buycart">
+          <button class="buy">BUY NOW</button>
+          <button class="addtocart">ADD TO CART</button>
+        </span>
       </div>
     </div>
 
-    <!-- *********footer -->
-
+    <!-- **************PRODUCT DETAIL  -->
     <footer>
       <div class="footerhead">
         <div class="footerlogocontainer">
@@ -143,6 +164,7 @@
         </div>
       </div>
     </footer>
+
     <script src="app.js"></script>
   </body>
 </html>

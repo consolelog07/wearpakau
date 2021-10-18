@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+.productdetailcontainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 80vh;
+}
+
+.productdetailcontainer .productcarousel {
+  height: 90%;
+}
+
+.productdetailcontainer .productcarousel img {
+  height: 100%;
+}
+
+.productdetailcontainer .productinfo {
+  width: 50%;
+  height: 100%;
+  display: block;
+  padding-top: 7%;
+}
+
+.productdetailcontainer .productinfo h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+.productdetailcontainer .productinfo p {
+  font-family: "Montserrat", sans-serif;
+  color: #a878d8;
+  font-weight: 200;
+}
+
+.productdetailcontainer .productinfo .sizes {
+  margin: 40px 0 20px 0;
+}
+
+.productdetailcontainer .productinfo .sizes span {
+  background: #a878d8;
+  width: 50px;
+  color: #f0d8f0;
+  padding: 5px 0;
+  display: inline-block;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.productdetailcontainer .productinfo .pricing {
+  margin: 10px 0 0 0;
+}
+
+.productdetailcontainer .productinfo .pricing span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+.productdetailcontainer .productinfo .pricing .og-price {
+  text-decoration: line-through;
+  font-weight: 200;
+}
+
+.productdetailcontainer .productinfo .pricing .discount {
+  color: #d8a8d8;
+}
+
+.productdetailcontainer .productinfo .qunatitycustombox {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+}
+
+.productdetailcontainer .productinfo .qunatitycustombox .quantityselector {
+  cursor: pointer;
+  background: #a878d8;
+  color: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.productdetailcontainer .productinfo .qunatitycustombox .quantityselector span {
+  color: #f0d8f0;
+}
+
+.productdetailcontainer .productinfo .qunatitycustombox .quantityselector select {
+  cursor: pointer;
+  border: none;
+  background: #a878d8;
+  color: #f0d8f0;
+}
+
+.productdetailcontainer .productinfo .qunatitycustombox .quantityselector select option {
+  color: #f0d8f0;
+  cursor: pointer;
+  background: #a878d8;
+}
+
+.productdetailcontainer .productinfo .qunatitycustombox .customiseproduct {
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: #f0d8f0;
+  background-color: #a878d8;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.productdetailcontainer .productinfo .buycart {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+}
+
+.productdetailcontainer .productinfo .buycart .buy {
+  font-size: 20px;
+  background-color: #a878d8;
+  color: #f0d8f0;
+  padding: 10px 25px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.productdetailcontainer .productinfo .buycart .addtocart {
+  font-size: 20px;
+  border: 2px solid #a878d8;
+  cursor: pointer;
+  background-color: transparent;
+  color: #9060a8;
+  padding: 7px 20px;
+  border-radius: 5px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.productdetailcontainer .productinfo .buycart .addtocart:hover {
+  background-color: #a878d8;
+  color: #f0d8f0;
+}
+
+@media only screen and (max-width: 768px) {
+  .productdetailcontainer .productcarousel {
+    height: 80%;
+  }
+  .productdetailcontainer .productinfo {
+    padding-top: 3%;
+  }
+  .productdetailcontainer .productinfo h1 {
+    font-size: 30px;
+  }
+  .productdetailcontainer .productinfo p {
+    font-size: 14px;
+  }
+  .productdetailcontainer .productinfo .sizes {
+    margin: 20px 0 10px 0;
+  }
+  .productdetailcontainer .productinfo .sizes span {
+    width: 30px;
+    font-size: 16px;
+  }
+  .productdetailcontainer .productinfo .pricing span {
+    font-size: 18px;
+    margin-right: 18px;
+  }
+  .productdetailcontainer .productinfo .qunatitycustombox {
+    width: 90%;
+  }
+  .productdetailcontainer .productinfo .qunatitycustombox .quantityselector {
+    padding: 8px;
+    font-size: 16px;
+  }
+  .productdetailcontainer .productinfo .qunatitycustombox .customiseproduct {
+    font-size: 16px;
+    padding: 8px;
+  }
+  .productdetailcontainer .productinfo .buycart {
+    width: 90%;
+  }
+  .productdetailcontainer .productinfo .buycart .buy {
+    font-size: 16px;
+  }
+  .productdetailcontainer .productinfo .buycart .addtocart {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .productdetailcontainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 150vh;
+  }
+  .productdetailcontainer .productcarousel {
+    margin-top: 10px;
+    width: 100%;
+    height: 60vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .productdetailcontainer .productcarousel img {
+    margin: 0 auto;
+    width: auto;
+    height: 100%;
+  }
+  .productdetailcontainer .productinfo {
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+  }
+  .productdetailcontainer .productinfo h1 {
+    font-size: 22px;
+  }
+  .productdetailcontainer .productinfo p {
+    font-size: 13px;
+  }
+  .productdetailcontainer .productinfo .sizes {
+    margin-bottom: 15px;
+  }
+  .productdetailcontainer .productinfo .sizes span {
+    width: 40px;
+  }
+  .productdetailcontainer .productinfo .buycart .buy {
+    padding: 10px 35px;
+  }
+  .productdetailcontainer .productinfo .buycart .addtocart {
+    padding: 8px 35px;
+  }
+}
+/*# sourceMappingURL=productdetail.css.map */

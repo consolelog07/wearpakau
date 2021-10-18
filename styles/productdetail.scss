@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+$montserrat: "Montserrat", sans-serif;
+$taffy: #f0d8f0;
+$lavender: #d8a8d8;
+$blosson: #a878d8;
+$orchid: #9060a8;
+
+.productdetailcontainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  //   background: green;
+  height: 80vh;
+  .productcarousel {
+    // background: red;
+    height: 90%;
+    img {
+      height: 100%;
+    }
+  }
+  .productinfo {
+    // background: pink;
+    width: 50%;
+    height: 100%;
+    display: block;
+    padding-top: 7%;
+    h1 {
+      font-family: $montserrat;
+      font-size: 40px;
+      line-height: 1.5;
+    }
+    p {
+      font-family: $montserrat;
+      color: $blosson;
+      font-weight: 200;
+    }
+    .sizes {
+      margin: 40px 0 20px 0;
+      span {
+        background: $blosson;
+        width: 50px;
+
+        color: $taffy;
+        padding: 5px 0;
+        display: inline-block;
+        text-align: center;
+        font-family: $montserrat;
+        font-weight: 400;
+        font-size: 22px;
+        border-radius: 5px;
+        margin-right: 10px;
+      }
+    }
+    .pricing {
+      margin: 10px 0 0 0;
+      span {
+        font-family: $montserrat;
+        font-size: 22px;
+        font-weight: 600;
+        margin-right: 20px;
+      }
+      .og-price {
+        text-decoration: line-through;
+        font-weight: 200;
+      }
+      .discount {
+        color: $lavender;
+      }
+    }
+    .qunatitycustombox {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 70%;
+      .quantityselector {
+        cursor: pointer;
+        background: $blosson;
+        color: $montserrat;
+        font-size: 18px;
+        font-family: $montserrat;
+        padding: 10px;
+        border-radius: 5px;
+        span {
+          color: $taffy;
+        }
+        select {
+          cursor: pointer;
+          border: none;
+          background: $blosson;
+          color: $taffy;
+          option {
+            color: $taffy;
+            cursor: pointer;
+            background: $blosson;
+          }
+        }
+      }
+      .customiseproduct {
+        cursor: pointer;
+        font-family: $montserrat;
+        font-size: 18px;
+        color: $taffy;
+        background-color: $blosson;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+      }
+    }
+    .buycart {
+      margin-top: 30px;
+      // background-color: red;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 70%;
+      .buy {
+        font-size: 20px;
+        background-color: $blosson;
+        color: $taffy;
+        padding: 10px 25px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+      }
+      .addtocart {
+        font-size: 20px;
+        border: 2px solid $blosson;
+        cursor: pointer;
+        background-color: transparent;
+        color: $orchid;
+        padding: 7px 20px;
+        border-radius: 5px;
+        outline: none;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          background-color: $blosson;
+          color: $taffy;
+        }
+      }
+    }
+  }
+}
+
+// **************** media queries for tabs n ipads
+
+@media only screen and (max-width: 768px) {
+  .productdetailcontainer {
+    .productcarousel {
+      height: 80%;
+    }
+    .productinfo {
+      padding-top: 3%;
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 14px;
+      }
+      .sizes {
+        margin: 20px 0 10px 0;
+        span {
+          width: 30px;
+          font-size: 16px;
+        }
+      }
+      .pricing {
+        span {
+          font-size: 18px;
+          margin-right: 18px;
+        }
+      }
+      .qunatitycustombox {
+        width: 90%;
+        .quantityselector {
+          padding: 8px;
+          font-size: 16px;
+        }
+        .customiseproduct {
+          font-size: 16px;
+          padding: 8px;
+        }
+      }
+      .buycart {
+        width: 90%;
+        .buy {
+          font-size: 16px;
+        }
+        .addtocart {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+// ************** media queries for mobile devices
+
+@media only screen and (max-width: 480px) {
+  .productdetailcontainer {
+    flex-direction: column;
+    justify-content: center;
+    height: 150vh;
+    .productcarousel {
+      margin-top: 10px;
+      width: 100%;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        margin: 0 auto;
+        width: auto;
+        height: 100%;
+      }
+    }
+    .productinfo {
+      height: 100%;
+      width: 100%;
+      padding-left:20px;
+      h1{
+        font-size: 22px;
+      }
+      p{
+        font-size: 13px;
+      }
+      .sizes{
+        margin-bottom: 15px;
+        span{
+          width: 40px;
+        }
+      }
+     .buycart{
+       .buy{
+         padding:10px 35px;
+       }
+       .addtocart{
+         padding: 8px 35px;
+       }
+     }
+    }
+  }
+}
