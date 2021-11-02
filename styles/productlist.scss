@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+$montserrat: "Montserrat", sans-serif;
+$taffy: #f0d8f0;
+$lavender: #d8a8d8;
+$blosson: #a878d8;
+$orchid: #9060a8;
+
+.productlistoutercontainer {
+  width: 100%;
+
+  .productlistfilter {
+    width: 100%;
+    padding: 10px;
+    overflow: auto;
+    .listfilter {
+      float: right;
+      font-family: $montserrat;
+      font-size: 13px;
+      span {
+        font-family: $montserrat;
+        font-size: 13px;
+      }
+      select {
+        border-radius: 3px;
+        font-size: 13px;
+        option {
+          font-family: $montserrat;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .listcontainer {
+    height: 350px;
+    .innercontainer {
+      height: 100%;
+      display: flex;
+      // align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      .imgcontainer {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        height: 95%;
+        img {
+          height: 130%;
+        }
+      }
+      .detailcontainer {
+        width: 100%;
+        padding-left: 50px;
+        .productname {
+          font-family: $montserrat;
+          font-weight: 500;
+          font-size: 22px;
+          color: black;
+          text-decoration: none;
+        }
+        .productcategory {
+          font-family: $montserrat;
+          font-size: 16px;
+          font-weight: 400;
+          color: $lavender;
+        }
+        .pricing {
+          margin-top: 10px;
+          span {
+            font-family: $montserrat;
+            margin-right: 7px;
+          }
+          .price {
+            font-size: 21px;
+          }
+          .og-price {
+            font-size: 13px;
+            font-weight: 300;
+            text-decoration: line-through;
+          }
+          .discount {
+            font-size: 14px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}
+
+// **************** media queries for tabs n ipads
+
+@media only screen and (max-width: 768px) {
+  .productlistoutercontainer .listcontainer {
+    height: 250px;
+    .innercontainer {
+      .imgcontainer {
+        img {
+          height: 120%;
+        }
+      }
+      .detailcontainer {
+        padding-left: 30px;
+      }
+    }
+  }
+}
+
+// ************** media queries for mobile devices
+
+@media only screen and (max-width: 480px) {
+  .productlistoutercontainer .listcontainer {
+    height: 180px;
+    .innercontainer {
+      padding: 10px;
+      .imgcontainer {
+        width: 50%;
+        height: 100%;
+        img {
+          height: 120%;
+        }
+      }
+      .detailcontainer {
+        padding-left: 5px;
+        .productname {
+          font-size: 16px;
+        }
+        .productcategory {
+          font-size: 13px;
+        }
+        .pricing {
+          .price {
+            font-size: 18px;
+          }
+          .og-price {
+            font-weight: 300;
+            font-size: 12px;
+          }
+          .discount {
+            font-weight: 300;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
