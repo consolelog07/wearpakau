@@ -7,7 +7,12 @@ $orchid: #9060a8;
 
 .productlistoutercontainer {
   width: 100%;
+  .listhr{
+    width: 95%;
+    margin:0 auto;
+    opacity: 0.6;
 
+  }
   .productlistfilter {
     width: 100%;
     padding: 10px;
@@ -38,7 +43,7 @@ $orchid: #9060a8;
       display: flex;
       // align-items: center;
       justify-content: space-between;
-      padding: 10px 40px;
+      padding: 10px 10px 10px 100px;
       .imgcontainer {
         overflow: hidden;
         display: flex;
@@ -52,7 +57,7 @@ $orchid: #9060a8;
       }
       .detailcontainer {
         width: 100%;
-        padding-left: 50px;
+        padding-left:20px;
         .productname {
           font-family: $montserrat;
           font-weight: 500;
@@ -84,6 +89,15 @@ $orchid: #9060a8;
             font-size: 14px;
             font-weight: 300;
           }
+        }
+        .extrainfo{
+         font-family: $montserrat; 
+         margin-top: 10px;
+         list-style-type: none;
+         li{
+           font-size: 14px;
+           margin-top: 5px;
+         }
         }
       }
     }
@@ -142,6 +156,9 @@ $orchid: #9060a8;
             font-weight: 300;
             font-size: 12px;
           }
+        }
+        .extrainfo li{
+          font-size: 12px;
         }
       }
     }
