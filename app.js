@@ -25,3 +25,18 @@ const navslide=()=>{
     })
 }
 navslide()
+
+const togglemodal=()=>{
+    console.log("modal ")
+    const modal=document.querySelector('.modalcontainer')
+    const modalclosebtn=document.querySelector('.closemodal')
+    const customiseqrbtn=document.querySelector('.customiseproduct')
+    modalclosebtn.addEventListener('click',()=>{
+        modal.style.display='none'
+    })
+    customiseqrbtn.addEventListener('click',()=>{
+        modal.style.display='block'
+    })
+
+}
+togglemodal()

@@ -109,7 +109,6 @@
           <span>100% Original Products</span>
         </div> -->
         <span class="qunatitycustombox">
-
           <div class="quantityselector">
             <span>Quantity </span>
             <select>
@@ -128,6 +127,93 @@
         </span>
       </div>
     </div>
+
+    <!-- ***********************Custom modal -->
+    
+    <div class="modalcontainer">
+      <div class="closemodal">
+        <img src="styles/images/closeicon.svg" alt="" />
+      </div>
+      <!-- <div class="steppercontainer">
+        <ul class="progressbar">
+          <li class="active">Choose eye</li>
+          <li>Step 2</li>
+          <li>Step 3</li>
+        </ul>
+      </div> -->
+      <!-- <h2 class="eyeheading">Choose an eye</h2> -->
+      <h2 class="customqrhead">Customise Your QR Below</h2>
+      <div class="collapsiblecontainer">
+        <details open>
+          <summary>Dots Option</summary>
+          <div class="selectstyle">
+            <label class="select" for="slct">
+              <select id="slct" required="required">
+                <option value="" disabled="disabled" selected="selected">
+                  Select dot style
+                </option>
+                <option value="#">Square</option>
+                <option value="#">Dots</option>
+                <option value="#">Rounded</option>
+                <option value="#">Extra rounded</option>
+                <option value="#">Classy</option>
+                <option value="#">Classy rounded</option>
+              </select>
+              <svg>
+                <use xlink:href="#select-arrow-down"></use>
+              </svg>
+            </label>
+            <!-- SVG Sprites-->
+            <svg class="sprites">
+              <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                <polyline points="1 1 5 5 9 1"></polyline>
+              </symbol>
+            </svg>
+          </div>
+        </details>
+        <details>
+          <summary>Corner Square Option</summary>
+          <div class="selectstyle">
+            <label class="select" for="slct">
+              <select id="slct" required="required">
+                <option value="" disabled="disabled" selected="selected">
+                  Select corner square style
+                </option>
+                <option value="#">None</option>
+                <option value="#">Square</option>
+                <option value="#">Dot</option>
+                <option value="#">Extra rounded</option>
+              </select>
+              <svg>
+                <use xlink:href="#select-arrow-down"></use>
+              </svg>
+            </label>
+            <!-- SVG Sprites-->
+            <svg class="sprites">
+              <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                <polyline points="1 1 5 5 9 1"></polyline>
+              </symbol>
+            </svg>
+          </div>
+        </details>
+        <details>
+          <summary>Image Options</summary>
+          <div>
+           Choose image
+           <input type="file" id="img" name="img" accept="image/*">
+          </div>
+        </details>
+      </div>
+      <div class="qrboxcontainer">
+        <div></div>
+      </div>
+      <div class="modalbtncontainer">
+        <!-- <button class="cancelcustomisation">Cancel</button> -->
+        <button class="donecustomisation">Done</button>
+      </div>
+    </div>
+
+    <!-- ***********************Custom modal -->
 
     <!-- **************PRODUCT DETAIL  -->
     <footer>
@@ -176,5 +262,21 @@
     </footer>
 
     <script src="app.js"></script>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
