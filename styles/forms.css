@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
 .outerformcontainer {
-  height: 82vh;
+  height: 80vh;
   width: 100%;
   position: relative;
 }
@@ -116,30 +116,33 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .formcontainer {
+  .outerformcontainer .formcontainer {
     width: 50%;
   }
-  .formcontainer .formheading {
+  .outerformcontainer .formcontainer .formheading {
     margin: 10px 0;
   }
-  .formcontainer .loginform {
+  .outerformcontainer .formcontainer .loginform {
     margin-top: 20px;
   }
-  .formcontainer .loginform .inputcontainer {
+  .outerformcontainer .formcontainer .loginform .inputcontainer {
     width: 70%;
   }
-  .formcontainer .loginform .inputcontainer label {
+  .outerformcontainer .formcontainer .loginform .inputcontainer label {
     margin-bottom: 3px;
   }
-  .formcontainer .loginform .submitbutton {
+  .outerformcontainer .formcontainer .loginform .submitbutton {
     width: 70%;
   }
-  .formcontainer .loginform .alreadyhaveacc {
+  .outerformcontainer .formcontainer .loginform .alreadyhaveacc {
     margin-top: 10px;
   }
 }
 
 @media only screen and (max-width: 480px) {
+  .outerformcontainer {
+    height: 500px;
+  }
   .outerformcontainer .formcontainer {
     width: 80%;
   }

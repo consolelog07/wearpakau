@@ -142,11 +142,19 @@ $orchid: #9060a8;
         }
       }
     }
+    .detailqrbox{
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
   }
 }
 
 .modalcontainer {
-  // display: none;
+  
+  display: none;
   position: fixed;
   width: 80%;
   // height: 70vh;
@@ -157,13 +165,33 @@ $orchid: #9060a8;
   border-radius: 5px;
   transform: translate(-50%, -50%);
   padding: 0px 0px 30px 10px;
-  overflow: auto;
+  // overflow: scroll;
+  min-height: 90vh;
 
+  /* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $lavender; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
   .qrboxcontainer {
     width: 90%;
     max-width: 600px;
     margin: 15px auto 5px auto;
-    div{
+    div {
       width: 200px;
       height: 200px;
       border: 1px solid black;
@@ -171,19 +199,19 @@ $orchid: #9060a8;
       border-radius: 5px;
     }
   }
-  .modalbtncontainer{
+  .modalbtncontainer {
     float: right;
     margin-top: 1rem;
-    .cancelcustomisation{
-      padding: .4rem 1.3rem;
+    .cancelcustomisation {
+      padding: 0.4rem 1.3rem;
       font-family: $montserrat;
       font-size: 16px;
       outline: none;
       cursor: pointer;
       margin-right: 1rem;
     }
-    .donecustomisation{
-      padding: .4rem 1.3rem;
+    .donecustomisation {
+      padding: 0.4rem 1.3rem;
       font-family: $montserrat;
       font-size: 16px;
       outline: none;
@@ -192,11 +220,10 @@ $orchid: #9060a8;
       cursor: pointer;
       margin-right: 1rem;
       color: $taffy;
-      &:hover{
+      &:hover {
         color: white;
       }
     }
-
   }
 
   .closemodal {
@@ -225,6 +252,9 @@ $orchid: #9060a8;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
+    height: 300px;
+    overflow-y: scroll;
+    overflow-x: none;
 
     details div {
       border-left: 2px solid #000;
@@ -355,55 +385,56 @@ $orchid: #9060a8;
       }
     }
   }
-  // **************** media queries for tabs n ipads
+}
+// **************** media queries for tabs n ipads
 
-  @media only screen and (max-width: 768px) {
-    .productdetailcontainer {
-      .productcarousel {
-        height: 80%;
+@media only screen and (max-width: 768px) {
+  .productdetailcontainer {
+    .productcarousel {
+      height: 80%;
+    }
+    .productinfo {
+      padding-top: 3%;
+      h1 {
+        font-size: 30px;
       }
-      .productinfo {
-        padding-top: 3%;
-        h1 {
-          font-size: 30px;
-        }
-        p {
-          font-size: 14px;
-        }
-        .sizes {
-          margin: 20px 0 10px 0;
-          span {
-            width: 30px;
-            font-size: 16px;
-          }
-        }
-        .pricing {
-          span {
-            font-size: 18px;
-            margin-right: 18px;
-          }
-        }
-        .qunatitycustombox {
-          width: 90%;
-          .quantityselector {
-            padding: 8px;
-            font-size: 16px;
-          }
-          .customiseproduct {
-            font-size: 16px;
-            padding: 8px;
-          }
-        }
-        .buycart {
-          width: 90%;
-          .buy {
-            font-size: 16px;
-          }
-          .addtocart {
-            font-size: 16px;
-          }
+      p {
+        font-size: 14px;
+      }
+      .sizes {
+        margin: 20px 0 10px 0;
+        span {
+          width: 30px;
+          font-size: 16px;
         }
       }
+      .pricing {
+        span {
+          font-size: 18px;
+          margin-right: 18px;
+        }
+      }
+      .qunatitycustombox {
+        width: 90%;
+        .quantityselector {
+          padding: 8px;
+          font-size: 16px;
+        }
+        .customiseproduct {
+          font-size: 16px;
+          padding: 8px;
+        }
+      }
+      .buycart {
+        width: 90%;
+        .buy {
+          font-size: 16px;
+        }
+        .addtocart {
+          font-size: 16px;
+        }
+      }
+      
     }
   }
 }

@@ -174,7 +174,16 @@
   color: #f0d8f0;
 }
 
+.productdetailcontainer .productinfo .detailqrbox {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
 .modalcontainer {
+  display: none;
   position: fixed;
   width: 80%;
   top: 50%;
@@ -185,7 +194,27 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 0px 0px 30px 10px;
-  overflow: auto;
+  min-height: 90vh;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.modalcontainer ::-webkit-scrollbar {
+  width: 5px;
+}
+
+.modalcontainer ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.modalcontainer ::-webkit-scrollbar-thumb {
+  background: #d8a8d8;
+}
+
+.modalcontainer ::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .modalcontainer .qrboxcontainer {
@@ -208,7 +237,7 @@
 }
 
 .modalcontainer .modalbtncontainer .cancelcustomisation {
-  padding: .4rem 1.3rem;
+  padding: 0.4rem 1.3rem;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   outline: none;
@@ -217,7 +246,7 @@
 }
 
 .modalcontainer .modalbtncontainer .donecustomisation {
-  padding: .4rem 1.3rem;
+  padding: 0.4rem 1.3rem;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   outline: none;
@@ -258,6 +287,9 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
+  height: 300px;
+  overflow-y: scroll;
+  overflow-x: none;
 }
 
 .modalcontainer .collapsiblecontainer details div {
@@ -412,47 +444,47 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .modalcontainer .productdetailcontainer .productcarousel {
+  .productdetailcontainer .productcarousel {
     height: 80%;
   }
-  .modalcontainer .productdetailcontainer .productinfo {
+  .productdetailcontainer .productinfo {
     padding-top: 3%;
   }
-  .modalcontainer .productdetailcontainer .productinfo h1 {
+  .productdetailcontainer .productinfo h1 {
     font-size: 30px;
   }
-  .modalcontainer .productdetailcontainer .productinfo p {
+  .productdetailcontainer .productinfo p {
     font-size: 14px;
   }
-  .modalcontainer .productdetailcontainer .productinfo .sizes {
+  .productdetailcontainer .productinfo .sizes {
     margin: 20px 0 10px 0;
   }
-  .modalcontainer .productdetailcontainer .productinfo .sizes span {
+  .productdetailcontainer .productinfo .sizes span {
     width: 30px;
     font-size: 16px;
   }
-  .modalcontainer .productdetailcontainer .productinfo .pricing span {
+  .productdetailcontainer .productinfo .pricing span {
     font-size: 18px;
     margin-right: 18px;
   }
-  .modalcontainer .productdetailcontainer .productinfo .qunatitycustombox {
+  .productdetailcontainer .productinfo .qunatitycustombox {
     width: 90%;
   }
-  .modalcontainer .productdetailcontainer .productinfo .qunatitycustombox .quantityselector {
+  .productdetailcontainer .productinfo .qunatitycustombox .quantityselector {
     padding: 8px;
     font-size: 16px;
   }
-  .modalcontainer .productdetailcontainer .productinfo .qunatitycustombox .customiseproduct {
+  .productdetailcontainer .productinfo .qunatitycustombox .customiseproduct {
     font-size: 16px;
     padding: 8px;
   }
-  .modalcontainer .productdetailcontainer .productinfo .buycart {
+  .productdetailcontainer .productinfo .buycart {
     width: 90%;
   }
-  .modalcontainer .productdetailcontainer .productinfo .buycart .buy {
+  .productdetailcontainer .productinfo .buycart .buy {
     font-size: 16px;
   }
-  .modalcontainer .productdetailcontainer .productinfo .buycart .addtocart {
+  .productdetailcontainer .productinfo .buycart .addtocart {
     font-size: 16px;
   }
 }
