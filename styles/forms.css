@@ -103,14 +103,21 @@
 }
 
 .outerformcontainer .formcontainer .loginform .alreadyhaveacc {
+  margin-top: 10px;
+}
+
+.outerformcontainer .formcontainer .loginform .privacynotice {
   margin-top: 30px;
+}
+
+.outerformcontainer .formcontainer .loginform .alreadyhaveacc, .outerformcontainer .formcontainer .loginform .privacynotice {
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 400;
   display: block;
 }
 
-.outerformcontainer .formcontainer .loginform .alreadyhaveacc p a {
+.outerformcontainer .formcontainer .loginform .alreadyhaveacc p a, .outerformcontainer .formcontainer .loginform .privacynotice p a {
   color: #a878d8;
   text-decoration: none;
 }
