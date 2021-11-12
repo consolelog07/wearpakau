@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/productdetail.css" />
     <link rel="stylesheet" href="styles/footer.css" />
+    <script type="text/javascript" src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+    <!-- *****splide  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
   </head>
   <style>
     .nimish {
@@ -88,8 +92,8 @@
     <!-- **************PRODUCT DETAIL  -->
 
     <div class="productdetailcontainer">
-      <div class="productcarousel">
-        <img src="styles/images/tshirtimage.jpg" alt="" />
+      <div class="productcarousel splide">
+        <img src="styles/images/tshirtimage.jpg" alt="">
       </div>
       <div class="productinfo">
         <h1>Premium Cotton T-Shirt Vest</h1>
@@ -206,7 +210,7 @@
         </details>
       </div>
       <div class="qrboxcontainer">
-        <div></div>
+        <div id='canvas07' ></div>
       </div>
       <div class="modalbtncontainer">
         <!-- <button class="cancelcustomisation">Cancel</button> -->
@@ -279,5 +283,35 @@
         });
       }
     </script>
+    <script type="text/javascript">
+
+      const qrCode = new QRCodeStyling({
+          width: 300,
+          height: 300,
+          type: "svg",
+          data: "https://www.facebook.com/",
+          image: null,
+          dotsOptions: {
+              color: "#4267b2",
+              type: "rounded"
+          },
+          backgroundOptions: {
+              color: "#e9ebee",
+          },
+          imageOptions: {
+              crossOrigin: "anonymous",
+              margin: 20
+          }
+      });
+  
+      qrCode.append(document.getElementById("canvas07"));
+      // qrCode.download({ name: "qr", extension: "svg" });
+  </script>
+  <script>
+    document.addEventListener( 'DOMContentLoaded', function() {
+      var splide = new Splide( '.splide' );
+      splide.mount();
+    } );
+  </script>
   </body>
 </html>
