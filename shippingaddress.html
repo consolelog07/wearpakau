@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>WearPakau</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/shippingaddress.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+  </head>
+  <style>
+    .nimish {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      z-index: 500;
+      overflow: hidden;
+      background-color: gray;
+      opacity: 0.8;
+      left: 0;
+      top: 0;
+      display: none;
+      /* transform: translateX(-100%); */
+      transition: width 2s, height 115s ease-in;
+      /* overflow: hidden; */
+    }
+    /* *** */
+
+    /* body{
+    overflow: hidden;
+  } */
+  </style>
+  <body>
+    <nav>
+      <!-- ***********NAVBAR START -->
+
+      <div class="burger">
+        <img src="styles/images/MENUBURGER.svg" alt="" />
+      </div>
+      <div class="logo">
+        <img src="styles/images/amazon_logo.png" alt="" />
+      </div>
+      <div class="searchcontainer">
+        <input
+          type="text"
+          placeholder="What are you looking for?"
+          name="search"
+          autocomplete="off"
+        />
+        <button><img src="styles/images/searchicon.svg" alt="" /></button>
+      </div>
+      <div class="cartcontainer">
+        <img src="styles/images/carticon.svg" alt="" />
+      </div>
+      <div class="profilecontainer">
+        <img src="styles/images/profileicon.svg" alt="" />
+      </div>
+      <div class="nimish">
+        <!-- <h1>helloworf</h1> -->
+      </div>
+
+      <ul class="navlinks">
+        <div class="closebutton">
+          <img src="styles/images/closeicon.svg" alt="" />
+        </div>
+        <li class="navlink"><a href="#">Xyz</a></li>
+        <li class="navlink"><a href="#">Xyz</a></li>
+        <li class="navlink"><a href="#">Xyz</a></li>
+        <li class="navlink"><a href="#">Xyz</a></li>
+      </ul>
+    </nav>
+    <div class="searchcontainermobile">
+      <div class="searchmobile">
+        <input
+          type="text"
+          placeholder="What are you looking for?"
+          name="search"
+          autocomplete="off"
+        />
+        <button><img src="styles/images/searchicon.svg" alt="" /></button>
+      </div>
+    </div>
+
+    <!-- *****placeholder container -->
+    <!-- <div class="placeholdercontainer"></div> -->
+
+    <!-- ***** Shipping address  -->
+
+    <div class="container">
+        <h1>Shipping</h1>
+        <p>Please enter your shipping details.</p>
+        <hr />
+        <div class="form">
+          
+        <div class="fields fields--2">
+          <label class="field">
+            <span class="field__label" for="firstname">First name</span>
+            <input class="field__input" type="text" id="firstname" value="John" />
+          </label>
+          <label class="field">
+            <span class="field__label" for="lastname">Last name</span>
+            <input class="field__input" type="text" id="lastname" value="Doe" />
+          </label>
+        </div>
+        <label class="field">
+          <span class="field__label" for="address">Address</span>
+          <input class="field__input" type="text" id="address" />
+        </label>
+        <label class="field">
+          <span class="field__label" for="country">Country</span>
+          <select class="field__input" id="country">
+            <option value=""></option>
+            <option value="unitedstates">United States</option>
+          </select>
+        </label>
+        <div class="fields fields--3">
+          <label class="field">
+            <span class="field__label" for="zipcode">Zip code</span>
+            <input class="field__input" type="text" id="zipcode" />
+          </label>
+          <label class="field">
+            <span class="field__label" for="city">City</span>
+            <input class="field__input" type="text" id="city" />
+          </label>
+          <label class="field">
+            <span class="field__label" for="state">State</span>
+            <select class="field__input" id="state">
+              <option value=""></option>
+            </select>
+          </label>
+        </div>
+        </div>
+        <hr>
+        <button class="button">Continue</button>
+      </div>
+
+
+
+
+
+
+    <!-- ***** Shipping address  -->
+
+    <!-- *********footer -->
+
+    <footer>
+      <div class="footerhead">
+        <div class="footerlogocontainer">
+          <img src="styles/images/logowc.png" alt="" />
+        </div>
+      </div>
+      <div class="footerlinkscontainer">
+        <div class="footercol1">
+          <h3 class="footercoltitle">CUSTOMER SERVICE</h3>
+          <ul class="footercollinklist">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Return Order</a></li>
+            <li><a href="#">Cancel Order</a></li>
+          </ul>
+        </div>
+        <div class="footercol2">
+          <h3 class="footercoltitle">COMPANY</h3>
+          <ul class="footercollinklist">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footercol3">
+          <h3 class="footercoltitle">CONNECT WITH US</h3>
+          <ul class="footercollinklist footersocialicons">
+            <li>
+              <a href="#"
+                ><img src="styles/images/instagramicon.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"><img src="styles/images/twittericon.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="styles/images/facebookicon.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
