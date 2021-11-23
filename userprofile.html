@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>WearPakau</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/userprofile.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"
+    ></script>
+    <!-- *****splide  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  </head>
+  <style>
+    .nimish {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      z-index: 500;
+      overflow: hidden;
+      background-color: gray;
+      opacity: 0.8;
+      left: 0;
+      top: 0;
+      display: none;
+      /* transform: translateX(-100%); */
+      transition: width 2s, height 115s ease-in;
+      /* overflow: hidden; */
+    }
+    /* *** */
+
+    /* body{
+    overflow: hidden;
+  } */
+  </style>
+  <body>
+    <nav>
+      <!-- ***********NAVBAR START -->
+
+      <div class="burger">
+        <img src="styles/images/MENUBURGER.svg" alt="" />
+      </div>
+      <div class="logo">
+        <img src="styles/images/amazon_logo.png" alt="" />
+      </div>
+      <div class="searchcontainer">
+        <input
+          type="text"
+          placeholder="What are you looking for?"
+          name="search"
+          autocomplete="off"
+        />
+        <button><img src="styles/images/searchicon.svg" alt="" /></button>
+      </div>
+      <div class="cartcontainer">
+        <img src="styles/images/carticon.svg" alt="" />
+      </div>
+      <div class="profilecontainer">
+        <img src="styles/images/profileicon.svg" alt="" />
+      </div>
+      <div class="nimish">
+        <!-- <h1>helloworf</h1> -->
+      </div>
+
+      <ul class="navlinks">
+        <div class="closebutton">
+          <img src="styles/images/closeicon.svg" alt="" />
+        </div>
+        <li class="navlink"><a href="#">Xyz</a></li>
+        <li class="navlink"><a href="#">Xyz</a></li>
+        <li class="navlink"><a href="#">Xyz</a></li>
+        <li class="navlink"><a href="#">Xyz</a></li>
+      </ul>
+    </nav>
+    <div class="searchcontainermobile">
+      <div class="searchmobile">
+        <input
+          type="text"
+          placeholder="What are you looking for?"
+          name="search"
+          autocomplete="off"
+        />
+        <button><img src="styles/images/searchicon.svg" alt="" /></button>
+      </div>
+    </div>
+    <!-- *****placeholder container -->
+    <!-- <div class="placeholdercontainer"></div> -->
+
+    <!-- **************user profile -->
+
+    <div class="userprofilecontainer">
+      <h1 class="userprofilehead">My Profile</h1>
+
+      <span class="namecontainer">
+        <div class="firstnamecontainer">
+          <label class="detaillabel" for="name">First Name</label>
+          <input
+            type="text"
+            readonly="readonly"
+            id="Name"
+            class="detailinput"
+            value="Rehan"
+          />
+        </div>
+        <div class="lastnamecontainer">
+          <label class="detaillabel" for="name">Last Name</label>
+          <input
+            type="text"
+            readonly="readonly"
+            id="Name"
+            class="detailinput"
+            value="Rangrez"
+          />
+        </div>
+      </span>
+      <div class="emailcontainer">
+        <label class="detaillabel" for="email">Email Id</label>
+        <input
+          type="email"
+          readonly="readonly"
+          id="email"
+          class="detailinput"
+          value="rehan@gmail.com"
+        />
+      </div>
+      <div class="passcontainer">
+        <label class="detaillabel" for="pass">Password</label>
+        <input
+          type="password"
+          readonly="readonly"
+          id="pass"
+          class="detailinput"
+          value="12345678"
+        />
+        <a href="" class="changepass">Change Password</a>
+      </div>
+      <div class="productlistcontainer">
+        <h2 class="myproducts">My products</h2>
+        <div class="productlistfilter">
+          <div class="listfilter">
+            <span>Sort by price: </span>
+            <select>
+              <option value="Low to High">Low to High</option>
+              <option value="High to Low">High to Low</option>
+            </select>
+          </div>
+        </div>
+        <div class="listcontainer">
+          <div class="innercontainer">
+            <div class="imgcontainer">
+              <img src="styles/images/tshirtimage.jpg" alt="" />
+            </div>
+            <div class="detailcontainer">
+              <h2 class="productname">
+                <a class="productname" href="productdetail.html"
+                  >Premium Cotton T-Shirt Vest</a
+                >
+              </h2>
+              <p class="productcategory">Tshirt</p>
+              <div class="pricing">
+                <span class="price">RS. 4900</span>
+                <span class="og-price">RS. 10000</span>
+                <span class="discount">Save (50%)</span>
+              </div>
+              <ul class="extrainfo">
+                <li>100% Cotton</li>
+                <li>100% Vibranium</li>
+                <li>Cash on delivery available</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="listcontainer">
+          <div class="innercontainer">
+            <div class="imgcontainer">
+              <img src="styles/images/tshirtimage.jpg" alt="" />
+            </div>
+            <div class="detailcontainer">
+              <h2 class="productname">
+                <a class="productname" href="productdetail.html"
+                  >Premium Cotton T-Shirt Vest</a
+                >
+              </h2>
+              <p class="productcategory">Tshirt</p>
+              <div class="pricing">
+                <span class="price">RS. 4900</span>
+                <span class="og-price">RS. 10000</span>
+                <span class="discount">Save (50%)</span>
+              </div>
+              <ul class="extrainfo">
+                <li>100% Cotton</li>
+                <li>100% Vibranium</li>
+                <li>Cash on delivery available</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="listcontainer">
+          <div class="innercontainer">
+            <div class="imgcontainer">
+              <img src="styles/images/tshirtimage.jpg" alt="" />
+            </div>
+            <div class="detailcontainer">
+              <h2 class="productname">
+                <a class="productname" href="productdetail.html"
+                  >Premium Cotton T-Shirt Vest</a
+                >
+              </h2>
+              <p class="productcategory">Tshirt</p>
+              <div class="pricing">
+                <span class="price">RS. 4900</span>
+                <span class="og-price">RS. 10000</span>
+                <span class="discount">Save (50%)</span>
+              </div>
+              <ul class="extrainfo">
+                <li>100% Cotton</li>
+                <li>100% Vibranium</li>
+                <li>Cash on delivery available</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="listhr" />
+        <div class="listcontainer">
+          <div class="innercontainer">
+            <div class="imgcontainer">
+              <img src="styles/images/tshirtimage.jpg" alt="" />
+            </div>
+            <div class="detailcontainer">
+              <h2 class="productname">
+                <a class="productname" href="productdetail.html"
+                  >Premium Cotton T-Shirt Vest</a
+                >
+              </h2>
+              <p class="productcategory">Tshirt</p>
+              <div class="pricing">
+                <span class="price">RS. 4900</span>
+                <span class="og-price">RS. 10000</span>
+                <span class="discount">Save (50%)</span>
+              </div>
+              <ul class="extrainfo">
+                <li>100% Cotton</li>
+                <li>100% Vibranium</li>
+                <li>Cash on delivery available</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="listhr" />
+  
+        <div class="listcontainer">
+          <div class="innercontainer">
+            <div class="imgcontainer">
+              <img src="styles/images/tshirtimage.jpg" alt="" />
+            </div>
+            <div class="detailcontainer">
+              <h2 class="productname">
+                <a class="productname" href="productdetail.html"
+                  >Premium Cotton T-Shirt Vest</a
+                >
+              </h2>
+              <p class="productcategory">Tshirt</p>
+              <div class="pricing">
+                <span class="price">RS. 4900</span>
+                <span class="og-price">RS. 10000</span>
+                <span class="discount">Save (50%)</span>
+              </div>
+              <ul class="extrainfo">
+                <li>100% Cotton</li>
+                <li>100% Vibranium</li>
+                <li>Cash on delivery available</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="showallproducts">Show all products</a>
+      </div>
+      <button class="activateproduct">
+        Activate Product
+      </button>
+    </div>
+
+    <!-- **************user profile -->
+    <footer>
+      <div class="footerhead">
+        <div class="footerlogocontainer">
+          <img src="styles/images/logowc.png" alt="" />
+        </div>
+      </div>
+      <div class="footerlinkscontainer">
+        <div class="footercol1">
+          <h3 class="footercoltitle">CUSTOMER SERVICE</h3>
+          <ul class="footercollinklist">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Return Order</a></li>
+            <li><a href="#">Cancel Order</a></li>
+          </ul>
+        </div>
+        <div class="footercol2">
+          <h3 class="footercoltitle">COMPANY</h3>
+          <ul class="footercollinklist">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footercol3">
+          <h3 class="footercoltitle">CONNECT WITH US</h3>
+          <ul class="footercollinklist footersocialicons">
+            <li>
+              <a href="#"
+                ><img src="styles/images/instagramicon.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"><img src="styles/images/twittericon.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="styles/images/facebookicon.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+
+    <!-- <script>
+    document.addEventListener( 'DOMContentLoaded', function() {
+      var splide = new Splide( '.splide' );
+      splide.mount();
+    } );
+  </script> -->
+  </body>
+</html>

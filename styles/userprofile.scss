@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+$montserrat: "Montserrat", sans-serif;
+$taffy: #f0d8f0;
+$lavender: #d8a8d8;
+$blosson: #a878d8;
+$orchid: #9060a8;
+
+.userprofilecontainer {
+  width: 100%;
+  height: fit-content;
+  padding: 50px 100px;
+  .userprofilehead {
+    font-family: $montserrat;
+    font-size: 24px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 50px;
+    font-weight: 500;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -10px;
+      width: 50%;
+      height: 3px;
+      background: #a878d8;
+    }
+  }
+
+  //   .namecontainer {
+  //     display: block;
+  //     margin-left: 50px;
+  //     margin-bottom: 30px;
+  //     label {
+  //       font-family: $montserrat;
+  //       font-size: 15px;
+  //       margin-bottom: 8px;
+  //     }
+  // .detailinput {
+  //   display: block;
+  //   border-radius: 5px;
+  //   outline: none;
+  //   margin-top: 10px;
+  //   font-family: $montserrat;
+  //   // font-size: 14px;
+  //   border: 1px solid black;
+  //   line-height: 30px;
+  //   padding: 4px 12px 3px;
+  //   width: 300px;
+  // }
+  //   }
+
+  .namecontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    margin-left: 50px;
+    .firstnamecontainer,
+    .lastnamecontainer {
+      label {
+        font-family: $montserrat;
+        display: block;
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+      .detailinput {
+        display: block;
+        border-radius: 5px;
+        outline: none;
+        margin-top: 10px;
+        font-family: $montserrat;
+        // font-size: 14px;
+        border: 1px solid black;
+        line-height: 30px;
+        padding: 4px 12px 3px;
+        width: 300px;
+      }
+    }
+  }
+  .emailcontainer,
+  .passcontainer {
+    margin-left: 50px;
+    margin-top: 30px;
+    label {
+      font-family: $montserrat;
+      display: block;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    .detailinput {
+      display: block;
+      border-radius: 5px;
+      outline: none;
+      margin-top: 10px;
+      font-family: $montserrat;
+      // font-size: 14px;
+      border: 1px solid black;
+      line-height: 30px;
+      padding: 4px 12px 3px;
+      width: 300px;
+    }
+    .changepass {
+      color: $blosson;
+      font-family: $montserrat;
+      font-size: 14px;
+      text-decoration: none;
+      margin-top: 4px;
+      display: block;
+    }
+  }
+
+  // ******product list
+  .productlistcontainer {
+    border: 3px solid rgb(109, 105, 105);
+    margin: 20px 0 20px 50px;
+    border-radius: 10px;
+    width: 80%;
+    overflow: auto;
+    .myproducts {
+      font-family: $montserrat;
+      font-size: 26px;
+      font-weight: 500;
+      margin-left: 50px;
+      margin: 20px 0 20px 50px;
+    }
+    .productlistfilter {
+      width: 100%;
+      padding: 10px;
+      overflow: auto;
+      .listfilter {
+        float: right;
+        font-family: $montserrat;
+        font-size: 13px;
+        span {
+          font-family: $montserrat;
+          font-size: 13px;
+        }
+        select {
+          border-radius: 3px;
+          font-size: 13px;
+          option {
+            font-family: $montserrat;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+    .listcontainer {
+      height: 350px;
+      .innercontainer {
+        height: 100%;
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+        padding: 10px 10px 10px 50px;
+        .imgcontainer {
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 30%;
+          height: 95%;
+          img {
+            height: 130%;
+          }
+        }
+        .detailcontainer {
+          width: 100%;
+          padding-left: 20px;
+          .productname {
+            font-family: $montserrat;
+            font-weight: 500;
+            font-size: 22px;
+            color: black;
+            text-decoration: none;
+          }
+          .productcategory {
+            font-family: $montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            color: $lavender;
+          }
+          .pricing {
+            margin-top: 10px;
+            span {
+              font-family: $montserrat;
+              margin-right: 7px;
+            }
+            .price {
+              font-size: 21px;
+            }
+            .og-price {
+              font-size: 13px;
+              font-weight: 300;
+              text-decoration: line-through;
+            }
+            .discount {
+              font-size: 14px;
+              font-weight: 300;
+            }
+          }
+          .extrainfo {
+            font-family: $montserrat;
+            margin-top: 10px;
+            list-style-type: none;
+            li {
+              font-size: 14px;
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+    }
+    .showallproducts {
+      color: $blosson;
+      font-family: $montserrat;
+      font-size: 14px;
+      text-decoration: none;
+      display: block;
+      float: right;
+      margin: 20px 10px;
+    }
+  }
+  .activateproduct {
+    color: $taffy;
+    background: $blosson;
+    margin-left: 60px;
+    font-family: $montserrat;
+    font-weight: 500;
+    padding: 10px 15px;
+    outline: none;
+    border: 1px solid $blosson;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+//**************** media queries for tabs n ipads
+
+@media only screen and (max-width: 768px) {
+  .userprofilecontainer {
+    padding: 30px;
+    .userprofilehead {
+      margin-bottom: 30px;
+    }
+    .namecontainer {
+      width: 550px;
+      margin-left: 30px;
+      .firstnamecontainer,
+      .lastnamecontainer {
+        .detailinput {
+          width: 250px;
+        }
+      }
+    }
+    .emailcontainer,
+    .passcontainer {
+      margin-left: 30px;
+    }
+    .productlistcontainer {
+      margin-left: 0;
+      width: 100%;
+      border: 1px solid rgb(109, 105, 105);
+      .myproducts {
+        font-size: 24px;
+        margin-left: 30px;
+      }
+      .listcontainer {
+        height: 250px;
+        .innercontainer {
+          .imgcontainer {
+            img {
+              height: 120%;
+            }
+          }
+          .detailcontainer {
+            padding-left: 30px;
+          }
+        }
+      }
+    }
+    .activateproduct {
+      margin-left: 10px;
+    }
+  }
+}
+
+// ************** media queries for mobile devices
+
+@media only screen and (max-width: 480px) {
+  .userprofilecontainer {
+    padding: 20px 10px;
+    .userprofilehead {
+      margin: 20px 7px;
+    }
+    .namecontainer {
+      flex-direction: column;
+      align-items: start;
+      margin-left: 20px;
+      width: 90%;
+      .firstnamecontainer,
+      .lastnamecontainer {
+        width: 100%;
+        margin-top: 20px;
+
+        .detailinput {
+          width: 100%;
+        }
+      }
+    }
+    .emailcontainer,
+    .passcontainer {
+      margin-left: 20px;
+      margin-top: 20px;
+      width: 90%;
+      .detailinput{
+        width: 100%;
+      }
+    }
+    .productlistcontainer {
+      margin-left: 0;
+      .myproducts {
+        margin: 10px;
+      }
+      .listcontainer {
+        height: 180px;
+        .innercontainer {
+          padding: 10px;
+          .imgcontainer {
+            width: 50%;
+            height: 100%;
+            img {
+              height: 120%;
+            }
+          }
+          .detailcontainer {
+            padding-left: 5px;
+            .productname {
+              font-size: 16px;
+            }
+            .productcategory {
+              font-size: 13px;
+            }
+            .pricing {
+              .price {
+                font-size: 18px;
+              }
+              .og-price {
+                font-weight: 300;
+                font-size: 12px;
+              }
+              .discount {
+                font-weight: 300;
+                font-size: 12px;
+              }
+            }
+            .extrainfo li {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
