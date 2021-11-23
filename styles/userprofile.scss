@@ -210,6 +210,14 @@ $orchid: #9060a8;
               margin-top: 5px;
             }
           }
+          .showdetails {
+            color: $blosson;
+            font-family: $montserrat;
+            font-size: 14px;
+            text-decoration: none;
+            margin-top: 7px;
+            display: block;
+          }
         }
       }
     }
@@ -315,7 +323,7 @@ $orchid: #9060a8;
       margin-left: 20px;
       margin-top: 20px;
       width: 90%;
-      .detailinput{
+      .detailinput {
         width: 100%;
       }
     }

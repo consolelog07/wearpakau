@@ -230,6 +230,15 @@
   margin-top: 5px;
 }
 
+.userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .showdetails {
+  color: #a878d8;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 7px;
+  display: block;
+}
+
 .userprofilecontainer .productlistcontainer .showallproducts {
   color: #a878d8;
   font-family: "Montserrat", sans-serif;
