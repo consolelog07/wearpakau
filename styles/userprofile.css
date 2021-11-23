@@ -55,20 +55,21 @@
   outline: none;
   margin-top: 10px;
   font-family: "Montserrat", sans-serif;
-  border: 1px solid black;
+  border: 1px solid #d3c9d36b;
   line-height: 30px;
   padding: 4px 12px 3px;
   width: 300px;
+  background-color: #d3c9d338;
 }
 
 .userprofilecontainer .emailcontainer,
-.userprofilecontainer .passcontainer {
+.userprofilecontainer .phonecontainer {
   margin-left: 50px;
   margin-top: 30px;
 }
 
 .userprofilecontainer .emailcontainer label,
-.userprofilecontainer .passcontainer label {
+.userprofilecontainer .phonecontainer label {
   font-family: "Montserrat", sans-serif;
   display: block;
   margin-bottom: 10px;
@@ -76,31 +77,35 @@
 }
 
 .userprofilecontainer .emailcontainer .detailinput,
-.userprofilecontainer .passcontainer .detailinput {
+.userprofilecontainer .phonecontainer .detailinput {
   display: block;
   border-radius: 5px;
   outline: none;
   margin-top: 10px;
   font-family: "Montserrat", sans-serif;
-  border: 1px solid black;
   line-height: 30px;
   padding: 4px 12px 3px;
   width: 300px;
+  border: 1px solid #d3c9d36b;
+  background-color: #d3c9d338;
 }
 
-.userprofilecontainer .emailcontainer .changepass,
-.userprofilecontainer .passcontainer .changepass {
-  color: #a878d8;
+.userprofilecontainer .activateproduct {
+  color: white;
+  background: #a878d8;
+  margin: 20px 0 20px 50px;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  text-decoration: none;
-  margin-top: 4px;
-  display: block;
+  font-weight: 500;
+  padding: 15px 20px;
+  outline: none;
+  border: 1px solid #a878d8;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .userprofilecontainer .productlistcontainer {
   border: 3px solid #6d6969;
-  margin: 20px 0 20px 50px;
+  margin: 10px 0 20px 50px;
   border-radius: 10px;
   width: 80%;
   overflow: auto;
@@ -193,50 +198,94 @@
   font-size: 16px;
   font-weight: 400;
   color: #d8a8d8;
-}
-
-.userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .pricing {
   margin-top: 10px;
 }
 
-.userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .pricing span {
-  font-family: "Montserrat", sans-serif;
-  margin-right: 7px;
+.userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .productcategory span {
+  color: black;
 }
 
-.userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .pricing .price {
-  font-size: 21px;
-}
-
-.userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .pricing .og-price {
-  font-size: 13px;
-  font-weight: 300;
-  text-decoration: line-through;
-}
-
-.userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .pricing .discount {
-  font-size: 14px;
-  font-weight: 300;
-}
-
-.userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .extrainfo {
-  font-family: "Montserrat", sans-serif;
-  margin-top: 10px;
-  list-style-type: none;
-}
-
-.userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .extrainfo li {
-  font-size: 14px;
-  margin-top: 5px;
-}
-
-.userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .showdetails {
-  color: #a878d8;
+.userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .currenturl {
+  color: #d8a8d8;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   text-decoration: none;
   margin-top: 7px;
   display: block;
+}
+
+.userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .currenturl a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+.userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .couponcontainer {
+  border: 1px solid rgba(0, 0, 0, 0.185);
+  display: block;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 40%;
+}
+
+.userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .couponcontainer .accordion {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 4px 0;
+  text-align: center;
+  width: 100%;
+  outline: none;
+  font-size: 13px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+}
+
+.userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .couponcontainer .panel {
+  padding: 5px 5px;
+  display: none;
+  font-size: 13px;
+  background-color: white;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 5px;
+}
+
+.userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .couponcontainer .panel .coupon {
+  border: 1px solid #a878d8;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+  padding: 5px 5px;
+  border-radius: 5px;
+  width: 70%;
+  font-weight: 400;
+}
+
+.userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .couponcontainer .panel .applycoupon {
+  margin-top: 10px;
+  padding: 6px 10px;
+  width: 28%;
+  cursor: pointer;
+  color: white;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
+  background: #a878d8;
+  outline: none;
+  border: none;
+}
+
+.userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .qrbox {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 15px;
+  float: right;
 }
 
 .userprofilecontainer .productlistcontainer .showallproducts {
@@ -247,19 +296,6 @@
   display: block;
   float: right;
   margin: 20px 10px;
-}
-
-.userprofilecontainer .activateproduct {
-  color: #f0d8f0;
-  background: #a878d8;
-  margin-left: 60px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  padding: 10px 15px;
-  outline: none;
-  border: 1px solid #a878d8;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
@@ -278,7 +314,7 @@
     width: 250px;
   }
   .userprofilecontainer .emailcontainer,
-  .userprofilecontainer .passcontainer {
+  .userprofilecontainer .phonecontainer {
     margin-left: 30px;
   }
   .userprofilecontainer .productlistcontainer {
@@ -291,13 +327,28 @@
     margin-left: 30px;
   }
   .userprofilecontainer .productlistcontainer .listcontainer {
-    height: 250px;
+    height: 300px;
   }
   .userprofilecontainer .productlistcontainer .listcontainer .innercontainer .imgcontainer img {
-    height: 120%;
+    height: 90%;
   }
   .userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer {
     padding-left: 30px;
+  }
+  .userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .couponcontainer {
+    width: 50%;
+  }
+  .userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .couponcontainer .accordion {
+    padding: 3px 0;
+  }
+  .userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .couponcontainer .panel .coupon {
+    width: 60%;
+  }
+  .userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .couponcontainer .panel .applycoupon {
+    float: right;
+    width: 36%;
+    padding: 6px;
+    margin-top: 0;
   }
   .userprofilecontainer .activateproduct {
     margin-left: 10px;
@@ -332,13 +383,13 @@
     width: 100%;
   }
   .userprofilecontainer .emailcontainer,
-  .userprofilecontainer .passcontainer {
+  .userprofilecontainer .phonecontainer {
     margin-left: 20px;
     margin-top: 20px;
     width: 90%;
   }
   .userprofilecontainer .emailcontainer .detailinput,
-  .userprofilecontainer .passcontainer .detailinput {
+  .userprofilecontainer .phonecontainer .detailinput {
     width: 100%;
   }
   .userprofilecontainer .productlistcontainer {
@@ -348,14 +399,14 @@
     margin: 10px;
   }
   .userprofilecontainer .productlistcontainer .listcontainer {
-    height: 180px;
+    height: 220px;
   }
   .userprofilecontainer .productlistcontainer .listcontainer .innercontainer {
     padding: 10px;
   }
   .userprofilecontainer .productlistcontainer .listcontainer .innercontainer .imgcontainer {
     width: 50%;
-    height: 100%;
+    height: 70%;
   }
   .userprofilecontainer .productlistcontainer .listcontainer .innercontainer .imgcontainer img {
     height: 120%;
@@ -382,6 +433,21 @@
   }
   .userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .extrainfo li {
     font-size: 12px;
+  }
+  .userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .couponcontainer {
+    width: 90%;
+    margin-top: 10px;
+    padding: 4px;
+  }
+  .userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .couponcontainer .accordion {
+    font-weight: 500;
+  }
+  .userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .couponcontainer .panel .applycoupon,
+  .userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .couponcontainer .panel .coupon {
+    font-size: 8px;
+  }
+  .userprofilecontainer .productlistcontainer .listcontainer .innercontainer .detailcontainer .qrbox {
+    display: none;
   }
 }
 /*# sourceMappingURL=userprofile.css.map */

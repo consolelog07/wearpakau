@@ -71,15 +71,16 @@ $orchid: #9060a8;
         margin-top: 10px;
         font-family: $montserrat;
         // font-size: 14px;
-        border: 1px solid black;
+        border: 1px solid #d3c9d36b;
         line-height: 30px;
         padding: 4px 12px 3px;
         width: 300px;
+        background-color: #d3c9d338;
       }
     }
   }
   .emailcontainer,
-  .passcontainer {
+  .phonecontainer {
     margin-left: 50px;
     margin-top: 30px;
     label {
@@ -95,25 +96,30 @@ $orchid: #9060a8;
       margin-top: 10px;
       font-family: $montserrat;
       // font-size: 14px;
-      border: 1px solid black;
       line-height: 30px;
       padding: 4px 12px 3px;
       width: 300px;
+      border: 1px solid #d3c9d36b;
+      background-color: #d3c9d338;
     }
-    .changepass {
-      color: $blosson;
-      font-family: $montserrat;
-      font-size: 14px;
-      text-decoration: none;
-      margin-top: 4px;
-      display: block;
-    }
+  }
+  .activateproduct {
+    color: white;
+    background: $blosson;
+    margin: 20px 0 20px 50px;
+    font-family: $montserrat;
+    font-weight: 500;
+    padding: 15px 20px;
+    outline: none;
+    border: 1px solid $blosson;
+    border-radius: 5px;
+    cursor: pointer;
   }
 
   // ******product list
   .productlistcontainer {
     border: 3px solid rgb(109, 105, 105);
-    margin: 20px 0 20px 50px;
+    margin: 10px 0 20px 50px;
     border-radius: 10px;
     width: 80%;
     overflow: auto;
@@ -181,42 +187,85 @@ $orchid: #9060a8;
             font-size: 16px;
             font-weight: 400;
             color: $lavender;
-          }
-          .pricing {
             margin-top: 10px;
             span {
-              font-family: $montserrat;
-              margin-right: 7px;
-            }
-            .price {
-              font-size: 21px;
-            }
-            .og-price {
-              font-size: 13px;
-              font-weight: 300;
-              text-decoration: line-through;
-            }
-            .discount {
-              font-size: 14px;
-              font-weight: 300;
+              color: black;
             }
           }
-          .extrainfo {
-            font-family: $montserrat;
-            margin-top: 10px;
-            list-style-type: none;
-            li {
-              font-size: 14px;
-              margin-top: 5px;
-            }
-          }
-          .showdetails {
-            color: $blosson;
+          .currenturl {
+            color: $lavender;
             font-family: $montserrat;
             font-size: 14px;
             text-decoration: none;
             margin-top: 7px;
             display: block;
+            a {
+              font-family: $montserrat;
+              text-decoration: none;
+              color: black;
+            }
+          }
+          .couponcontainer {
+            border: 1px solid rgba(0, 0, 0, 0.185);
+            display: block;
+            border-radius: 5px;
+            margin-top: 10px;
+            width: 40%;
+            .accordion {
+              background-color: white;
+              color: black;
+              cursor: pointer;
+              padding: 4px 0;
+              text-align: center;
+              width: 100%;
+              outline: none;
+              font-size: 13px;
+              transition: 0.4s;
+              border-radius: 5px;
+              font-family: $montserrat;
+              border: none;
+            }
+
+            .panel {
+              padding: 5px 5px;
+              display: none;
+              font-size: 13px;
+              background-color: white;
+              overflow: hidden;
+              font-family: $montserrat;
+              margin-top: 5px;
+              .coupon {
+                border: 1px solid $blosson;
+                font-size: 13px;
+                font-family: $montserrat;
+                outline: none;
+                padding: 5px 5px;
+                border-radius: 5px;
+                width: 70%;
+                font-weight: 400;
+              }
+              .applycoupon {
+                margin-top: 10px;
+                padding: 6px 10px;
+                width: 28%;
+                cursor: pointer;
+                color: white;
+                font-size: 13px;
+                font-family: $montserrat;
+                border-radius: 5px;
+                background: $blosson;
+                outline: none;
+                border: none;
+              }
+            }
+          }
+          .qrbox {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-top: 15px;
+            float: right;
           }
         }
       }
@@ -230,18 +279,6 @@ $orchid: #9060a8;
       float: right;
       margin: 20px 10px;
     }
-  }
-  .activateproduct {
-    color: $taffy;
-    background: $blosson;
-    margin-left: 60px;
-    font-family: $montserrat;
-    font-weight: 500;
-    padding: 10px 15px;
-    outline: none;
-    border: 1px solid $blosson;
-    border-radius: 5px;
-    cursor: pointer;
   }
 }
 
@@ -264,9 +301,10 @@ $orchid: #9060a8;
       }
     }
     .emailcontainer,
-    .passcontainer {
+    .phonecontainer {
       margin-left: 30px;
     }
+
     .productlistcontainer {
       margin-left: 0;
       width: 100%;
@@ -276,15 +314,32 @@ $orchid: #9060a8;
         margin-left: 30px;
       }
       .listcontainer {
-        height: 250px;
+        height: 300px;
         .innercontainer {
           .imgcontainer {
             img {
-              height: 120%;
+              height: 90%;
             }
           }
           .detailcontainer {
             padding-left: 30px;
+            .couponcontainer {
+              width: 50%;
+              .accordion {
+                padding: 3px 0;
+              }
+              .panel {
+                .coupon {
+                  width: 60%;
+                }
+                .applycoupon {
+                  float: right;
+                  width: 36%;
+                  padding: 6px;
+                  margin-top: 0;
+                }
+              }
+            }
           }
         }
       }
@@ -319,7 +374,7 @@ $orchid: #9060a8;
       }
     }
     .emailcontainer,
-    .passcontainer {
+    .phonecontainer {
       margin-left: 20px;
       margin-top: 20px;
       width: 90%;
@@ -333,12 +388,12 @@ $orchid: #9060a8;
         margin: 10px;
       }
       .listcontainer {
-        height: 180px;
+        height: 220px;
         .innercontainer {
           padding: 10px;
           .imgcontainer {
             width: 50%;
-            height: 100%;
+            height: 70%;
             img {
               height: 120%;
             }
@@ -366,6 +421,22 @@ $orchid: #9060a8;
             }
             .extrainfo li {
               font-size: 12px;
+            }
+
+            .couponcontainer {
+              width: 90%;
+              margin-top: 10px;
+              padding: 4px;
+              .accordion {
+                font-weight: 500;
+              }
+              .panel .applycoupon,
+              .panel .coupon {
+                font-size: 8px;
+              }
+            }
+            .qrbox {
+              display: none;
             }
           }
         }
