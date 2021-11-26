@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+$montserrat: "Montserrat", sans-serif;
+$taffy: #f0d8f0;
+$lavender: #d8a8d8;
+$blosson: #a878d8;
+$orchid: #9060a8;
+
+// ORDER ID
+// SHIPPPING address
+// STATUS
+// PAYMENT TYPE
+// PRICING DETAIL FROM CART
+// cancel order btn
+
+.orderdetailcontainer {
+  width: 90%;
+  padding: 100px 50px 100px 100px;
+  .orderdetailhead {
+    font-family: $montserrat;
+    font-size: 24px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: 500;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -10px;
+      width: 50%;
+      height: 3px;
+      background: #a878d8;
+    }
+  }
+  .orderdetail {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    span {
+      .orderid,
+      .address,
+      .status,
+      .paymenttype {
+        font-family: $montserrat;
+        font-size: 18px;
+        margin: 10px;
+        span {
+          color: $blosson;
+        }
+      }
+    }
+    .billingdetailcontainer {
+      width: 100%;
+      border: 0.5px solid rgba(0, 0, 0, 0.185) ;
+      border-radius: 5px;
+      padding: 10px;
+      width: 300px;
+      .detailhead {
+        font-family: $montserrat;
+        font-weight: 500;
+        margin: 5px 0 10px 0;
+        opacity: 0.8;
+        border-bottom: 0.5px solid rgba(0, 0, 0, 0.185);
+        padding-bottom: 4px;
+        // font-size: 13px;
+      }
+      ul li {
+        font-family: $montserrat;
+        // font-size: 13px;
+        list-style-type: none;
+        font-weight: 500;
+
+        span {
+          float: right;
+        }
+      }
+      ul .totalpayable {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .productcontainer {
+    width: 100%;
+    margin-top: 30px;
+    min-width: 500px;
+    // border: 0.5px solid rgba(0, 0, 0, 0.185);
+    box-shadow: 1px 2px 7px $taffy;
+    border-radius: 5px;
+    .product {
+      width: 100%;
+      height: 250px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      .productimgcontainer {
+        width: 40%;
+        margin-top: 10px;
+        height: 200px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          height: 130%;
+        }
+      }
+      .productdetail {
+        height: 100%;
+        width: 100%;
+        h2,
+        p,
+        div,
+        span {
+          margin-top: 5px;
+        }
+        .productname {
+          font-family: $montserrat;
+          font-size: 18px;
+          font-weight: 400;
+          span {
+            color: $blosson;
+          }
+        }
+        .productcategory {
+          font-family: $montserrat;
+          font-size: 16px;
+          span {
+            color: $blosson;
+          }
+        }
+        .price {
+          font-family: $montserrat;
+          font-size: 18px;
+        }
+        .quantityremovebox {
+          display: flex;
+          align-items: flex-end;
+          justify-content: flex-start;
+          .quantityselector {
+            cursor: pointer;
+            background: $blosson;
+            color: $montserrat;
+            font-size: 13px;
+            font-family: $montserrat;
+            padding: 7px;
+            border-radius: 3px;
+            margin-right: 20px;
+            span {
+              color: $taffy;
+            }
+            select {
+              cursor: pointer;
+              border: none;
+              background: $blosson;
+              color: $taffy;
+              option {
+                color: $taffy;
+                cursor: pointer;
+                background: $blosson;
+              }
+            }
+          }
+          .removeproduct {
+            cursor: pointer;
+            font-family: $montserrat;
+            font-size: 13px;
+            color: $taffy;
+            background-color: $blosson;
+            outline: none;
+            border: none;
+            border-radius: 3px;
+            padding: 7px;
+          }
+        }
+        .qrbox {
+          width: 100px;
+          height: 100px;
+          border: 1px solid black;
+          border-radius: 5px;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+
+//**************** media queries for tabs n ipads
+
+@media only screen and (max-width: 768px) {
+  .orderdetailcontainer {
+    padding: 50px 30px 50px 30px;
+    .orderdetailhead {
+      font-size: 22px;
+    }
+    .orderdetail {
+      align-items: flex-start;
+
+      span {
+        .orderid,
+        .address,
+        .status,
+        .paymenttype {
+          font-size: 12px;
+          margin: 10px;
+        }
+      }
+      .billingdetailcontainer {
+        padding: 7px;
+        .detailhead {
+          margin: 3px 0 5px 0;
+          font-size: 13px;
+          padding-bottom: 2px;
+        }
+        ul li {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .productcontainer {
+      min-width: 400px;
+      width: 100%;
+      .product {
+        height: 200px;
+        .productimgcontainer {
+          height: 150px;
+          img {
+            height: 140%;
+          }
+        }
+        .productdetail {
+          h2,
+          p,
+          div,
+          span {
+            margin-top: 7px;
+          }
+          .productname,
+          .productcategory {
+            font-size: 14px;
+            font-weight: 400;
+          }
+          .price {
+            font-size: 14px;
+          }
+          .qrbox {
+            float: right;
+            margin-right: 30px;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// **************** media queries for tabs n ipads
+
+@media only screen and (max-width: 768px) {
+  .orderdetailcontainer {
+    padding: 20px 0px 20px 30px;
+    .orderdetailhead {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .orderdetail {
+      span {
+        .orderid,
+        .address,
+        .status,
+        .paymenttype {
+          font-size: 10px;
+          margin: 7px;
+          span{
+            display: inline-block;
+          }
+        }
+      }
+      .billingdetailcontainer {
+        width: 350px;
+        .detailhead {
+          font-size: 12px;
+          font-weight: 400;
+        }
+        ul li {
+            font-weight: 400;
+          font-size: 10px;
+          margin-top: 4px;
+        }
+      }
+    }
+    .productcontainer {
+      min-width: 300px;
+      width: 100%;
+      .product {
+        height: fit-content;
+        padding: 10px;
+        .productimgcontainer {
+          height: 150px;
+          img {
+            height: 100%;
+          }
+        }
+        .productdetail {
+          padding-left: 10px;
+          h2,
+          p,
+          div,
+          span {
+            margin-top: 7px;
+          }
+          .productname,
+          .productcategory {
+            font-size: 10px;
+            font-weight: 400;
+          }
+          .price {
+            font-size: 12px;
+          }
+          .qrbox {
+            float: right;
+            margin-right: 0px;
+            margin-top: 5px;
+            width: 70px;
+            height: 70px;
+          }
+        }
+      }
+    }
+  }
+}
