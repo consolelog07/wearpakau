@@ -411,8 +411,11 @@
     padding: 10px 5px;
   }
   .cartpagecontainer .productcontainer {
-    min-width: 400px;
+    min-width: 350px;
     width: 100%;
+  }
+  .cartpagecontainer .productcontainer .warning {
+    margin: 0 10px;
   }
   .cartpagecontainer .productcontainer .product .productimgcontainer {
     height: 150px;

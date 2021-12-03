@@ -374,8 +374,13 @@ $orchid: #9060a8;
     flex-direction: column;
     padding: 10px 5px;
     .productcontainer {
-      min-width: 400px;
+      min-width: 350px;
       width: 100%;
+
+      .warning{
+        margin: 0 10px;
+      }
+
       .product {
         .productimgcontainer {
           height: 150px;
