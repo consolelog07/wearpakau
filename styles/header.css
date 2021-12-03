@@ -36,7 +36,7 @@ nav {
 }
 
 .logo {
-  width: 8%;
+  width: 10%;
   margin-right: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,8 +50,7 @@ nav {
 }
 
 .logo img {
-  margin-top: 10px;
-  width: 100%;
+  width: 30%;
 }
 
 .navlinks {
