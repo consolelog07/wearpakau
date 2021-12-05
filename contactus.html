@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>WearPakau</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/contactus.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-M3KR7ZF");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <style>
+    .nimish {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      z-index: 500;
+      overflow: hidden;
+      background-color: gray;
+      opacity: 0.8;
+      left: 0;
+      top: 0;
+      display: none;
+      /* transform: translateX(-100%); */
+      transition: width 2s, height 115s ease-in;
+      /* overflow: hidden; */
+    }
+    /* *** */
+
+    /* body{
+    overflow: hidden;
+  } */
+  </style>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M3KR7ZF"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <nav>
+      <!-- ***********NAVBAR START -->
+
+      <div class="burger">
+        <img src="styles/images/MENUBURGER.svg" alt="" />
+      </div>
+      <div class="logo">
+        <img src="styles/images/amazon_logo.png" alt="" />
+      </div>
+      <div class="searchcontainer">
+        <input
+          type="text"
+          placeholder="What are you looking for?"
+          name="search"
+          autocomplete="off"
+        />
+        <button><img src="styles/images/searchicon.svg" alt="" /></button>
+      </div>
+      <div class="cartcontainer">
+        <img src="styles/images/carticon.svg" alt="" />
+      </div>
+      <div class="profilecontainer">
+        <img src="styles/images/profileicon.svg" alt="" />
+      </div>
+      <div class="nimish">
+        <!-- <h1>helloworf</h1> -->
+      </div>
+
+      <ul class="navlinks">
+        <div class="closebutton">
+          <img src="styles/images/closeicon.svg" alt="" />
+        </div>
+        <li class="navlink"><a href="#">Xyz</a></li>
+        <li class="navlink"><a href="#">Xyz</a></li>
+        <li class="navlink"><a href="#">Xyz</a></li>
+        <li class="navlink"><a href="#">Xyz</a></li>
+      </ul>
+    </nav>
+    <div class="searchcontainermobile">
+      <div class="searchmobile">
+        <input
+          type="text"
+          placeholder="What are you looking for?"
+          name="search"
+          autocomplete="off"
+        />
+        <button><img src="styles/images/searchicon.svg" alt="" /></button>
+      </div>
+    </div>
+
+    <!-- *****placeholder container -->
+    <!-- <div class="placeholdercontainer"></div> -->
+
+    <!-- **************CONTACT -->
+    <div class="contactcontainer">
+      <h2 class="contactheading">Get in touch</h2>
+      <div class="innercontainer">
+        <div class="formcontainer">
+          <form action="">
+            <div class="inputcontainer">
+              <input
+                type="text"
+                class="name"
+                placeholder="NAME"
+                autocapitalize="on"
+              />
+            </div>
+            <div class="inputcontainer">
+              <input type="email" class="name" placeholder="EMAIL" />
+            </div>
+            <div class="inputcontainer">
+              <textarea
+                rows="10"
+                placeholder="MESSAGE"
+                name="message"
+                required
+              ></textarea>
+            </div>
+
+            <button class="submit">SEND</button>
+          </form>
+        </div>
+        <div class="detailcontainer">
+          <ul class="contactinfo">
+            <li>
+              <span><img src="styles/images/phone.svg" alt="" /></span
+              >1234567890
+            </li>
+            <li>
+              <span><img src="styles/images/email.svg" alt="" /></span
+              >abcd@emial.com
+            </li>
+          </ul>
+          <ul class="sociallink">
+            <li><img src="styles/images/instagramicon.svg" alt="" /></li>
+            <li><img src="styles/images/facebookicon.svg" alt="" /></li>
+            <li><img src="styles/images/twittericon.svg" alt="" /></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- **************CONTACT -->
+
+    <!-- *********footer -->
+
+    <footer>
+      <div class="footerhead">
+        <div class="footerlogocontainer">
+          <img src="styles/images/logowc.png" alt="" />
+        </div>
+      </div>
+      <div class="footerlinkscontainer">
+        <div class="footercol1">
+          <h3 class="footercoltitle">CUSTOMER SERVICE</h3>
+          <ul class="footercollinklist">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Return Order</a></li>
+            <li><a href="#">Cancel Order</a></li>
+          </ul>
+        </div>
+        <div class="footercol2">
+          <h3 class="footercoltitle">COMPANY</h3>
+          <ul class="footercollinklist">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footercol3">
+          <h3 class="footercoltitle">CONNECT WITH US</h3>
+          <ul class="footercollinklist footersocialicons">
+            <li>
+              <a href="#"
+                ><img src="styles/images/instagramicon.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"><img src="styles/images/twittericon.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="styles/images/facebookicon.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

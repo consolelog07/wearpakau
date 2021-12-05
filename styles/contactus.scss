@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+$montserrat: "Montserrat", sans-serif;
+$taffy: #f0d8f0;
+$lavender: #d8a8d8;
+$blosson: #a878d8;
+$orchid: #9060a8;
+
+.contactcontainer {
+  width: 100%;
+  padding: 20px 300px;
+  .contactheading {
+    font-family: $montserrat;
+    font-size: 28px;
+    position: relative;
+    // display: inline-block;
+    margin: 30px 0 0px 0;
+    text-align: center;
+    font-weight: 500;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -10px;
+      width: 20%;
+      height: 3px;
+      background: #a878d8;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .innercontainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    .formcontainer {
+      padding: 50px;
+      //   margin-right: 300px;
+      form {
+        .inputcontainer {
+          margin: 20px 0;
+          box-shadow: 1px 1px 5px #d8a8d8;
+          position: relative;
+          width: 300px;
+          border-radius: 5px;
+          input {
+            width: 100%;
+            font-family: $montserrat;
+            padding: 10px 10px;
+            border: none;
+            outline: none;
+            background: transparent;
+            &::placeholder {
+              color: black;
+              opacity: 0.7;
+            }
+          }
+          textarea {
+            resize: none;
+            width: 100%;
+            border: none;
+            outline: none;
+            font-family: $montserrat;
+            padding: 10px 10px;
+            background: transparent;
+            &::placeholder {
+              color: black;
+              opacity: 0.7;
+            }
+          }
+        }
+        button {
+          width: 100%;
+          padding: 7px 0;
+          background: $blosson;
+          font-family: $montserrat;
+          font-size: 12px;
+          color: white;
+          font-weight: 500;
+          border-radius: 5px;
+          border: 1px solid $blosson;
+          cursor: pointer;
+          &:hover {
+            background: white;
+            color: $blosson;
+            box-shadow: 1px 1px 5px #d8a8d8;
+            border: 1px solid white;
+          }
+        }
+      }
+    }
+    .detailcontainer {
+      border: 1px solid $blosson;
+      padding: 20px 50px;
+      border-radius: 5px;
+      margin-top: 60px;
+      .contactinfo {
+        // margin-top: 200px;
+        list-style-type: none;
+        li {
+          span {
+            margin-right: 15px;
+            img {
+              width: 25px;
+            }
+          }
+          margin-top: 20px;
+          font-family: $montserrat;
+          color: black;
+          opacity: 0.7;
+          font-size: 18px;
+        }
+      }
+      .sociallink {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+        li {
+          border: 1px solid $lavender;
+          border-radius: 50%;
+          height: 50px;
+          width: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:hover {
+            background: $lavender;
+          }
+          img {
+            height: 25px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+// **************** media queries for tabs n ipads
+
+@media only screen and (max-width: 768px) {
+  .contactcontainer {
+    .contactheading {
+      font-size: 22px;
+    }
+    .innercontainer {
+      .detailcontainer {
+        padding: 10px 10px;
+        min-width: 200px;
+        .contactinfo {
+          li {
+            font-size: 16px;
+            span {
+              margin-right: 10px;
+              img {
+                width: 20px;
+              }
+            }
+          }
+        }
+        .sociallink {
+          margin-top: 20px;
+          li {
+            height: 40px;
+            width: 40px;
+            img {
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ************** media queries for mobile devices
+
+@media only screen and (max-width: 480px) {
+  .contactcontainer {
+    padding: 20px;
+    .contactheading {
+      margin-top: 5px;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    .innercontainer {
+      flex-direction: column;
+      .formcontainer {
+        width: 100%;
+        padding: 20px;
+        form {
+          .inputcontainer {
+            width: 100%;
+          }
+        }
+      }
+      .detailcontainer{
+          border: none;
+          width: 80%;
+          margin-top: 20px;
+        //   margin: 30px auto;
+          .sociallink{
+              width: 70%;
+          }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+$montserrat: "Montserrat", sans-serif;
+$taffy: #f0d8f0;
+$lavender: #d8a8d8;
+$blosson: #a878d8;
+$orchid: #9060a8;
+
+.productactivatecontainer {
+  width: 100%;
+  .uppercontainer {
+    text-align: center;
+    .imgcontainer {
+      margin-top: 20px;
+    }
+    .activatebtn {
+      background-color: $blosson;
+      outline: none;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 5px;
+      color: white;
+      margin-top: 10px;
+      font-family: $montserrat;
+    }
+  }
+  .lowercontainer {
+    border: 1px solid $blosson;
+    border-radius: 15px;
+    margin: 20px 10px;
+    position: relative;
+    padding: 20px 20px;
+    .exclamationcontainer {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    .cardhead {
+      font-family: $montserrat;
+      font-weight:500;
+      font-size: 16px;
+      margin-top: 20px;
+      line-height: 1.5;
+    }
+    .cardlist{
+        list-style-type: none;
+        margin-top: 20px;
+        li{
+            font-family: $montserrat;
+            font-size: 14px;
+            margin-top: 10px;
+            font-weight: 400;
+        }
+    }
+
+  }
+}
