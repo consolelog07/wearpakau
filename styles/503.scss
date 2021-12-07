@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+$montserrat: "Montserrat", sans-serif;
+$taffy: #f0d8f0;
+$lavender: #d8a8d8;
+$blosson: #a878d8;
+$orchid: #9060a8;
+
+.container {
+  text-align: center;
+
+  .imgcontainer {
+    // background: red;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    img {
+      width: 100%;
+    }
+  }
+  .button {
+    padding: 20px 0;
+    margin-bottom: 50px;
+  a {
+      padding: 15px 35px;
+      text-decoration: none;
+      font-family: $montserrat;
+      color: white;
+      background-color: $blosson;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+}
+
+// **************** media queries for tabs n ipads
+
+@media only screen and (max-width: 768px) {
+    .container{
+        .imgcontainer{
+            width: 300px;
+            
+        }
+        .button{
+            padding: 10px 0;
+           a{
+                padding: 10px 25px;
+
+            }
+        }
+    }
+}
