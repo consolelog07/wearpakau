@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+.container {
+  position: relative;
+  height: 800px;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 200px;
+  width: 200px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card:hover .card-front {
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+
+.card:hover .card-back {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+
+.card-front {
+  height: 100%;
+  width: 100%;
+  background-image: url("images/final logo trans.png");
+  background-position: 50% 50%;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-animation-name: rotatefront;
+          animation-name: rotatefront;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.card-back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-align: center;
+  background-image: url("images/qrcode.png");
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 50% 50%;
+  -webkit-animation-name: rotateback;
+          animation-name: rotateback;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+@-webkit-keyframes rotatefront {
+  to {
+    -webkit-transform: rotateX(-180deg);
+            transform: rotateX(-180deg);
+  }
+}
+
+@keyframes rotatefront {
+  to {
+    -webkit-transform: rotateX(-180deg);
+            transform: rotateX(-180deg);
+  }
+}
+
+@-webkit-keyframes rotateback {
+  to {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+
+@keyframes rotateback {
+  to {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    height: 500px;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    height: 500px;
+  }
+}
+/*# sourceMappingURL=redirect.css.map */
