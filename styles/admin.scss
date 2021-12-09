@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+$montserrat: "Montserrat", sans-serif;
+$taffy: #f0d8f0;
+$lavender: #d8a8d8;
+$blosson: #a878d8;
+$orchid: #9060a8;
+
+.container {
+  width: 100%;
+  .uppercontainer {
+    padding: 50px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .card {
+      padding: 40px 50px;
+      border-radius: 5px;
+      text-align: center;
+      background-color: $blosson;
+      .cardhead {
+        font-family: $montserrat;
+        font-size: 20px;
+        color: white;
+      }
+      .cardtext {
+        font-family: $montserrat;
+        font-size: 18px;
+        margin-top: 10px;
+        color: white;
+      }
+    }
+  }
+  .lowercontainer {
+    padding: 20px 40px;
+    .tableheading {
+      font-family: $montserrat;
+      font-size: 24px;
+      font-style: 500;
+      margin: 10px 0;
+      letter-spacing: 1px;
+    }
+    .filtertablecontainer {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      .filtercontainer {
+        width: 20%;
+        // background: red;
+        padding: 10px;
+        .filterhead {
+          font-family: $montserrat;
+          font-size: 16px;
+          color: rgba(0, 0, 0, 0.671);
+          font-weight: 400;
+        }
+        form {
+          .form-check {
+            margin: 20px 0;
+
+            label {
+              font-family: $montserrat;
+              font-size: 14px;
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+      .tablecontainer {
+        width: 100%;
+        .table {
+          width: 100%;
+          border-collapse: collapse;
+          font-family: $montserrat;
+          th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: $blosson;
+            color: white;
+            font-weight: 400;
+          }
+          td,
+          th {
+            border: 1px solid $blosson;
+            padding: 8px;
+          }
+          td {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .paginationcontainer {
+      padding: 30px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      button {
+        padding: 10px 20px;
+        font-family: $montserrat;
+        background-color: white;
+        outline: none;
+        border: 1px solid black;
+      }
+    }
+  }
+}
+
+// **************** media queries for tabs n ipads
+
+@media only screen and (max-width: 768px) {
+  .container {
+    .uppercontainer {
+      padding: 40px 20px;
+      .card {
+        padding: 15px 15px;
+        .cardhead {
+          font-size: 16px;
+        }
+        .cardtext {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// ************** media queries for mobile devices
+
+@media only screen and (max-width: 480px) {
+  .container {
+    .uppercontainer {
+      padding: 20px 30px;
+      flex-direction: column;
+      .card {
+        width: 100%;
+        margin: 5px 0;
+        .cardhead {
+          font-size: 20px;
+        }
+        .cardtext {
+          font-size: 18px;
+        }
+      }
+    }
+    .lowercontainer {
+      padding: 20px 20px;
+      .filtertablecontainer {
+        flex-direction: column;
+        .filtercontainer {
+          width: 100%;
+          padding: 10px 0;
+          form {
+            margin-top: 10px;
+            display: flex;
+            .form-check {
+              margin: 0 0 0 20px;
+              text-align: center;
+              label {
+                margin-left: 0;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+
+        .tablecontainer {
+          width: 100%;
+          overflow: scroll;
+          table {
+            //   overflow: scroll;
+            th {
+              padding-top: 8px;
+              padding-bottom: 8px;
+            }
+            td,
+            th {
+              padding: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
