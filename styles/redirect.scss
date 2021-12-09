@@ -30,10 +30,10 @@ $orchid: #9060a8;
 .card-front {
   height: 100%;
   width: 100%;
-  background-image: url("images/final\ logo\ trans.png");
-  background-position: 50% 50%;
-  background-size: 30%;
-  background-repeat: no-repeat;
+  // background-image: url("images/final\ logo\ trans.png");
+  // background-position: 50% 50%;
+  // background-size: 30%;
+  // background-repeat: no-repeat;
   position: absolute;
   top: 0;
   left: 0;
@@ -45,6 +45,14 @@ $orchid: #9060a8;
   animation-delay: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: ease;
+  img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30%;
+    height: 30%;
+  }
 }
 
 .card-back {
@@ -57,15 +65,23 @@ $orchid: #9060a8;
   transform: rotateX(180deg);
   transition: 0.5s;
   text-align: center;
-  background-image: url("images/qrcode.png");
-  background-repeat: no-repeat;
-  background-size: 20%;
-  background-position: 50% 50%;
+  // background-image: url("images/qrcode.png");
+  // background-repeat: no-repeat;
+  // background-size: 20%;
+  // background-position: 50% 50%;
   animation-name: rotateback;
   animation-duration: 1.5s;
   animation-delay: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: ease;
+  img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30%;
+    height: 30%;
+  }
   // animation-fill-mode: both;
 }
 
