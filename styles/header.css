@@ -36,7 +36,8 @@ nav {
 }
 
 .logo {
-  width: 10%;
+  width: 100px;
+  height: 100%;
   margin-right: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,7 +51,7 @@ nav {
 }
 
 .logo img {
-  width: 30%;
+  height: 110%;
 }
 
 .navlinks {
@@ -268,9 +269,21 @@ nav {
   height: 80vh;
 }
 
+@media only screen and (max-width: 768px) {
+  .logo {
+    margin-right: 0;
+  }
+  .logo img {
+    height: 100%;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .searchcontainermobile {
     display: block;
+  }
+  .cartcontainer {
+    display: none;
   }
   nav {
     padding: 10px 20px;
@@ -285,11 +298,11 @@ nav {
     display: none;
   }
   nav .logo {
-    margin-right: 10px;
     width: 20%;
+    overflow: visible;
   }
   nav .logo img {
-    margin-top: 5px;
+    height: 110%;
   }
   .navlinks {
     width: 80%;

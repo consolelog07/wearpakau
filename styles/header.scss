@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
 $montserrat: "Montserrat", sans-serif;
-$taffy:#f0d8f0;
+$taffy: #f0d8f0;
 $lavender: #d8a8d8;
 $blosson: #a878d8;
 $orchid: #9060a8;
@@ -25,21 +25,21 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 8vh;
-  min-height:60px;
+  min-height: 60px;
   // background: #;
   padding: 10px 50px;
   border-bottom: 1px solid #a878d8;
   box-shadow: 1px 1px gray;
 }
 .logo {
-  width: 10%;
+  width: 100px;
+  height: 100%;
   margin-right: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   img {
-    // margin-top: 10px;
-    width: 30%;
+    height: 110%;
   }
 }
 .navlinks {
@@ -61,7 +61,7 @@ nav {
   transition: transform 0.5s ease;
   z-index: 9999;
   // position: relative;
-  .menuheading{
+  .menuheading {
     font-family: $montserrat;
     color: white;
     letter-spacing: 1.4px;
@@ -73,10 +73,9 @@ nav {
   overflow: hidden;
 }
 
-.navlink{
+.navlink {
   width: 100%;
   padding: 0 0 0 20px;
-
 }
 .navlink a {
   text-decoration: none;
@@ -178,7 +177,6 @@ nav {
   width: 80%;
 }
 
-
 // .searchcontainermobile {
 //   width: 300px;
 //   height: 95%;
@@ -218,35 +216,34 @@ nav {
 //   }
 // }
 
-
-.searchcontainermobile{
+.searchcontainermobile {
   display: none;
   width: 100%;
   height: 7vh;
   min-height: 50px;
   margin-top: 10px;
-  padding:2px 7px;
+  padding: 2px 7px;
   overflow: auto;
-  .searchmobile{
+  .searchmobile {
     width: 100%;
     height: 100%;
     position: relative;
     border: 1px solid $orchid;
     border-radius: 5px;
-    button{
+    button {
       width: 15%;
       height: 100%;
       background-color: transparent;
       outline: none;
-      border:none;
+      border: none;
       text-align: center;
-      img{
+      img {
         display: block;
         margin: 0 auto;
         width: 40%;
       }
     }
-    input{
+    input {
       font-family: $montserrat;
       font-size: 16px;
       border: none;
@@ -262,45 +259,58 @@ nav {
   }
 }
 
-
-
 // ******************placeholdercontainer
 
 .placeholdercontainer {
   height: 80vh;
 }
 
+// **************** media queries for tabs n ipads
 
-@media only screen and (max-width: 480px) {
-  .searchcontainermobile{
-    display: block;
+@media only screen and (max-width: 768px) {
+  .logo {
+    margin-right: 0;
+    img {
+      height: 100%;
+    }
   }
-    nav {
-        padding: 10px 20px;
-        .searchcontainer {
-          width: 150px;
-          input {
-            font-size: 14px;
-          }
-        }
-        .searchcontainer {
-          display: none;
-        }
-    
-        .logo {
-          margin-right: 10px;
-          width: 20%;
-          img {
-            margin-top: 5px;
-          }
-        }
-      }
-      .navlinks {
-        width: 80%;
-      }
-    
-      .closebutton {
-        right: -50px;
-      }
 }
 
+@media only screen and (max-width: 480px) {
+  .searchcontainermobile {
+    display: block;
+  }
+
+
+  .cartcontainer{
+    display: none;
+  }
+  nav {
+    padding: 10px 20px;
+    .searchcontainer {
+      width: 150px;
+      input {
+        font-size: 14px;
+      }
+    }
+    .searchcontainer {
+      display: none;
+    }
+
+    .logo {
+      // margin-right: 10px;
+      width: 20%;
+      overflow: visible;
+      img {
+        height: 110%;
+      }
+    }
+  }
+  .navlinks {
+    width: 80%;
+  }
+
+  .closebutton {
+    right: -50px;
+  }
+}
