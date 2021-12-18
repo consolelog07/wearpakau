@@ -185,11 +185,6 @@
   display: block;
 }
 
-.orderdetailcontainer .orderdetail .billingdetailcontainer .paymentoption input:focus, .orderdetailcontainer .orderdetail .billingdetailcontainer .paymentoption input:hover {
-  background-color: #a878d8;
-  color: white;
-}
-
 .orderdetailcontainer .orderdetail .billingdetailcontainer .paymentoption .orderwarning {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;

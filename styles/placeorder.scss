@@ -171,11 +171,7 @@ $orchid: #9060a8;
           font-family: $montserrat;
           font-size: 16px;
           display: block;
-          &:focus,
-          &:hover {
-            background-color: $blosson;
-            color: white;
-          }
+         
         }
         .orderwarning{
             font-family: $montserrat;
