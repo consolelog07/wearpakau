@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+$montserrat: "Montserrat", sans-serif;
+$taffy: #f0d8f0;
+$lavender: #d8a8d8;
+$blosson: #a878d8;
+$orchid: #9060a8;
+
+.external-container {
+  width: 100%;
+  padding: 50px 0;
+  .internal-container {
+    border: 1px solid black;
+    width: 500px;
+    padding: 30px 20px;
+    margin: 0 auto;
+    .address-confirmation-heading {
+      font-family: $montserrat;
+      font-weight: 500;
+      font-size: 22px;
+    }
+    .detail-container {
+      margin: 7px 0;
+      .detail-label {
+        font-size: 10px;
+        opacity: 0.8;
+        font-family: $montserrat;
+        font-weight: 400;
+      }
+      .detail-text {
+        font-family: $montserrat;
+        font-size: 12px;
+      }
+    }
+    .button-container{
+        margin-top: 20px;
+        .edit-button,.confirm-button{
+            background-color: $blosson;
+            color: white;
+            outline: none;
+            cursor: pointer;
+            border: none;
+            padding: 7px 10px;
+            font-size: 12px;
+
+        }
+        .confirm-button{
+            float: right;
+        }
+    }
+  }
+}
+
+
+
+// **************** media queries for mobile devices
+
+@media only screen and (max-width: 480px) {
+
+    .external-container{
+        padding: 30px 0;
+        .internal-container{
+            width: 90%;
+            .button-container{
+                .edit-button,.confirm-button{
+                    padding: 10px 12px;
+                }
+            }
+        }
+    }
+
+
+}

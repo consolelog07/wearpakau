@@ -8,7 +8,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/orderdetail.css" />
+    <link rel="stylesheet" href="styles/addressconfirmation.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <script
       type="text/javascript"
@@ -95,85 +95,50 @@
     </div>
     <!-- *****placeholder container -->
     <!-- <div class="placeholdercontainer"></div> -->
+    <!-- order confirmation modal********** -->
 
-    <!-- ************** order detail-->
-    <div class="orderdetailcontainer">
-      <h2 class="orderdetailhead">Order Details</h2>
-      <div class="container">
-        <ul class="progressbar">
-          <li class="active">Placed</li>
-          <li>Preparing</li>
-          <li>Dispatched</li>
-          <li>Out For Delivery</li>
-          <li>Delivered</li>
-        </ul>
-      </div>
-      <div class="orderdetail">
-        <span class="detailcontainer">
-          <p class="orderid">Order ID: <span>qwertyuiop</span></p>
-          <p class="address">
-            Shipping Address:<span>
-              112, C Wing, Floral Deck Plaza, Central Midc Road, Andheri
-              (e)</span
-            >
-          </p>
-          <p class="status">Status: <span> Delivered</span></p>
-          <p class="paymenttype">Payment: <span> Cash on delivery</span></p>
-          <p class="paymenttype">Coupon Applied: <span> REHAN</span></p>
-          <button class="cancel">Cancel Order</button>
-          <button class="print-reciept">Print Reciept</button>
-        </span>
-        <div class="billingdetailcontainer">
-          <p class="detailhead">Billing Details</p>
-          <ul>
-            <li class="carrtotal">
-              Cart Total
-              <span>RS. 4999</span>
-            </li>
-            <li class="shippingcharges">
-              Shipping Charges
-              <span>RS. 100</span>
-            </li>
-            <li class="additionalcharges">
-              Additional Charges
-              <span>RS. 100</span>
-            </li>
-            <li class="totalpayable">
-              Total Payable
-              <span>RS. 5999</span>
-            </li>
-          </ul>
+    <div class="external-container">
+        <div class="internal-container">
+            <h2 class="address-confirmation-heading">
+                Confirm Your Address
+            </h2>
+            <div class="detail-container">
+                <label for="Name" class="detail-label">Name</label>
+                <p class="name detail-text">Bill Gates</p>
+            </div>
+            <div class="detail-container">
+                <label for="address" class="detail-label">Address</label>
+                <p class="address detail-text">W-181 Ttc Industrial Area Pawne Village Thane Belapur Rd Pawane</p>
+            </div>
+            <div class="detail-container">
+                <label for="zipcode" class="detail-label">Zip code</label>
+                <p class="zipcode detail-text">400902</p>
+            </div>
+            <div class="detail-container">
+                <label for="city" class="detail-label">City</label>
+                <p class="city detail-text">Mumbai</p>
+            </div>
+            <div class="detail-container">
+                <label for="state" class="detail-label">State</label>
+                <p class="state detail-text">Maharashtra</p>
+            </div>
+            <div class="button-container">
+                <button class="edit-button">Edit</button>
+                <button class="confirm-button">Confirm</button>
+            </div>
         </div>
-      </div>
-
-      <div class="productcontainer">
-        <div class="product">
-          <div class="productimgcontainer">
-            <img src="styles/images/tshirtimage.jpg" alt="" />
-          </div>
-          <div class="productdetail">
-            <h2 class="productname">Product ID: <span>qwertyuiopasdfff</span></h2>
-            <p class="productcategory">Product Status: <span>Active</span></p>
-            <p class="price">RS. 4999</p>
-            <!-- <span class="quantityremovebox">
-              <div class="quantityselector">
-                <span>Quantity </span>
-                <select>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="3">4</option>
-                  <option value="3">5</option>
-                </select>
-              </div>
-              <button class="removeproduct">Remove</button>
-            </span> -->
-            <div class="qrbox"></div>
-          </div>
-        </div>
-      </div>
     </div>
 
+
+
+
+
+
+
+
+
+    <!-- order confirmation modal********** -->
+   
     <!-- ************** order detail-->
     <footer>
       <div class="footerhead">
