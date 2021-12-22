@@ -10,7 +10,7 @@ $orchid: #9060a8;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 80vh;
+  height: 83vh;
   .productcarousel {
     // background: red;
     height: 90%;
@@ -141,13 +141,32 @@ $orchid: #9060a8;
         }
       }
     }
-    .detailqrbox{
-      width: 100px;
-      height: 100px;
-      border: 1px solid black;
-      margin-top: 10px;
-      border-radius: 5px;
-    }
+    
+    .detailqrboxcontainer{
+      text-align: center;
+      width: 150px;
+      height: 150px;
+      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      .detailqrboxheading{
+        font-family: $montserrat;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        color: black;
+        font-weight: 400;
+      }
+      .detailqrbox{
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 5 auto;
+      }
+    }    
   }
 }
 
@@ -169,7 +188,7 @@ $orchid: #9060a8;
 
   /* width */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 7px;
 }
 
 /* Track */
@@ -190,6 +209,12 @@ $orchid: #9060a8;
     width: 90%;
     max-width: 600px;
     margin: 15px auto 5px auto;
+    text-align: center;
+    .qrtitle{
+      font-family: $montserrat;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
     div {
       width: 200px;
       height: 200px;
@@ -256,9 +281,9 @@ $orchid: #9060a8;
     overflow-x: none;
 
     details div {
-      border-left: 2px solid #000;
-      border-right: 2px solid #000;
-      border-bottom: 2px solid #000;
+      border-left: 1px solid #000;
+      border-right: 1px solid #000;
+      border-bottom: 1px solid #000;
       padding: 1.5em;
       font-family: $montserrat;
     }
@@ -280,7 +305,7 @@ $orchid: #9060a8;
     }
 
     summary {
-      border: 2px solid #000;
+      border: 1px solid #000;
       padding: 0.75em 1em;
       font-family: $montserrat;
       cursor: pointer;
@@ -296,7 +321,7 @@ $orchid: #9060a8;
       content: "↓";
       width: 1.75rem;
       height: 1.75rem;
-      background-color: #000;
+      background-color: $blosson;
       color: #fff;
       display: inline-flex;
       justify-content: center;
@@ -369,11 +394,11 @@ $orchid: #9060a8;
       }
       .select select:focus {
         outline: none;
-        border-color: #07f;
+        border-color: $lavender;
         box-shadow: 0 0 0 2px rgba(0, 119, 255, 0.2);
       }
       .select select:hover + svg {
-        stroke: #07f;
+        stroke: $lavender;
       }
       .sprites {
         position: absolute;
@@ -382,6 +407,10 @@ $orchid: #9060a8;
         pointer-events: none;
         user-select: none;
       }
+    }
+    .colorlabel{
+      font-family: $montserrat;
+      
     }
   }
 }
