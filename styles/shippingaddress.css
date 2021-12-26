@@ -17,15 +17,11 @@ html {
   }
 }
 
-body {
-  margin: 0;
-}
-
-h1 {
+.shipping-h1 {
   margin-bottom: 1rem;
 }
 
-p {
+.shipping-p {
   color: var(--color-gray);
   margin-top: 5px;
 }
@@ -42,7 +38,7 @@ hr {
   margin: 1rem 0;
 }
 
-h2 {
+.shipping-h2 {
   font-size: 18px;
   font-weight: 500;
 }
