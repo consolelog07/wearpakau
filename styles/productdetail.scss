@@ -514,3 +514,50 @@ $orchid: #9060a8;
     }
   }
 }
+
+
+
+
+// ***********Media query for extra small mobiles
+
+@media only screen and (max-width: 320px) {
+  .productdetailcontainer .productinfo .buycart{
+    .addtocart{
+      padding: 8px;
+    }
+    .buy{
+      padding: 8px 15px;
+      border: 2px solid #a878d8;
+    }
+  } 
+}
+
+
+
+@media only screen and (max-width: 390px) {
+
+
+  .productdetailcontainer .productinfo .buycart{
+    .addtocart{
+      padding: 7px 20px;
+    }
+    .buy{
+      padding: 7px 20px;
+      border: 2px solid #a878d8;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 312px) {
+
+  .productdetailcontainer .productinfo .buycart{
+    .addtocart{
+      padding: 8px ;
+    }
+    .buy{
+      padding: 8px;
+      border: 2px solid #a878d8;
+    }
+  }
+}

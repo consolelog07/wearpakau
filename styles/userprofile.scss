@@ -6,9 +6,22 @@ $blosson: #a878d8;
 $orchid: #9060a8;
 
 .userprofilecontainer {
+  position: relative;
   width: 100%;
   height: fit-content;
   padding: 50px 100px;
+  #homelink{
+    position: absolute;
+    top:20px;
+    left: 20px;
+    display: block;
+    a{
+      font-family: $montserrat;
+      font-size: 16px;
+      color: $blosson;
+      // text-decoration: none;
+    }
+  }
   .userprofilehead {
     font-family: $montserrat;
     font-size: 24px;
@@ -295,6 +308,14 @@ $orchid: #9060a8;
 @media only screen and (max-width: 768px) {
   .userprofilecontainer {
     padding: 30px;
+    #homelink{
+      top: 5px;
+      left: 5px;
+      a{
+        font-size: 14px;
+
+      }
+    }
     .userprofilehead {
       margin-bottom: 30px;
     }
@@ -368,6 +389,13 @@ $orchid: #9060a8;
 @media only screen and (max-width: 480px) {
   .userprofilecontainer {
     padding: 20px 10px;
+    #homelink{
+      top: 7px;
+      a{
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
     .userprofilehead {
       margin: 20px 7px;
     }
